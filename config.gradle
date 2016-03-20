@@ -1,17 +1,18 @@
-
-def supportVersion = "23.1.1"
+def supportVersion = "23.2.1"
 def rxBindingVersion = "0.4.0"
 def greenDAOVersion = "2.1.0"
 
 ext {
 
-    android = [compileSdkVersion: 23,
-               buildToolsVersion: "23.0.2",
-               applicationId    : "com.classic.android",
-               minSdkVersion    : 14,
-               targetSdkVersion : 23,
-               versionCode      : 1,
-               versionName      : "1.0"]
+    android = [
+            compileSdkVersion: 23,
+            buildToolsVersion: "23.0.2",
+            applicationId    : "com.classic.android",
+            minSdkVersion    : 14,
+            targetSdkVersion : 23,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
 
     //官方库
     supportV4 = "com.android.support:support-v4:${supportVersion}"
@@ -19,6 +20,8 @@ ext {
     supportDesign = "com.android.support:design:${supportVersion}"
     supportCardView = "com.android.support:cardview-v7:${supportVersion}"
     supportRecyclerView = "com.android.support:recyclerview-v7:${supportVersion}"
+    supportGridLayout = "com.android.support:gridlayout-v7:${supportVersion}"
+    supportAnnotations = "com.android.support:support-annotations:${supportVersion}"
     supportMultidex = "com.android.support:multidex:1.0.+"
 
     //基础项目
