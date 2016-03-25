@@ -6,7 +6,7 @@ ext {
 
     android = [
             compileSdkVersion: 23,
-            buildToolsVersion: "23.0.2",
+            buildToolsVersion: "23.0.3",
             applicationId    : "com.classic.android",
             minSdkVersion    : 14,
             targetSdkVersion : 23,
@@ -25,7 +25,7 @@ ext {
     supportMultidex = "com.android.support:multidex:1.0.+"
 
     //基础项目
-    basicProject = "com.classic.core:classic:1.6"
+    basicProject = "com.classic.core:classic:1.8"
 
     //动画
     nineoldandroids = "com.nineoldandroids:library:2.4.0"
@@ -63,10 +63,13 @@ ext {
     greenDAOGenerator = "de.greenrobot:greendao-generator:${greenDAOVersion}"
 
     //事件总线
-    androidEventus = "org.simple:androideventbus:latest"
+    eventBus = "compile 'org.greenrobot:eventbus:3.0.0'"
+    androidEventBus = "org.simple:androideventbus:latest"
 
-    materialRefeshLayout = "com.cjj.materialrefeshlayout:library:1.4.0"
+    //Material Design向下兼容库(Android 2.2+)
+    carbon = "tk.zielony:carbon:0.12.0"
+
+    materialRefeshLayout = "com.cjj.materialrefeshlayout:library:1.3.0"
     flycoTabLayout = "com.flyco.tablayout:FlycoTabLayout_Lib:2.0.0@aar"
-
 
 }
