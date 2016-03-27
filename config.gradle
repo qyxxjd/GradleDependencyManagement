@@ -69,6 +69,7 @@ ext {
     //Material Design向下兼容库(Android 2.2+)
     carbon = "tk.zielony:carbon:0.12.0"
 
+    mutipleStatusView = "com.classic.common:multiple-status-view:1.1"
     materialRefeshLayout = "com.cjj.materialrefeshlayout:library:1.3.0"
     flycoTabLayout = "com.flyco.tablayout:FlycoTabLayout_Lib:2.0.0@aar"
 

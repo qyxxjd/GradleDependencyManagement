@@ -2,14 +2,14 @@
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "23.1.1"
+def supportVersion = "23.2.1"
 def rxBindingVersion = "0.4.0"
 def greenDAOVersion = "2.1.0"
 
 ext {
 
     android = [compileSdkVersion: 23,
-               buildToolsVersion: "23.0.2",
+               buildToolsVersion: "23.0.3",
                applicationId    : "com.classic.gradleconfig",
                minSdkVersion    : 14,
                targetSdkVersion : 23,
