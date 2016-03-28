@@ -63,7 +63,7 @@ ext {
     greenDAOGenerator = "de.greenrobot:greendao-generator:${greenDAOVersion}"
 
     //事件总线
-    eventBus = "compile 'org.greenrobot:eventbus:3.0.0'"
+    eventBus = "org.greenrobot:eventbus:3.0.0"
     androidEventBus = "org.simple:androideventbus:latest"
 
     //Material Design向下兼容库(Android 2.2+)
