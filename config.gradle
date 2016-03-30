@@ -66,6 +66,12 @@ ext {
     eventBus = "org.greenrobot:eventbus:3.0.0"
     androidEventBus = "org.simple:androideventbus:latest"
 
+    //二维码扫描
+    zxing = "com.google.zxing:core:3.2.1"
+
+    //圆形ImageView
+    circleImageView = "de.hdodenhof:circleimageview:2.0.0"
+
     //Material Design向下兼容库(Android 2.2+)
     carbon = "tk.zielony:carbon:0.12.0"
 
