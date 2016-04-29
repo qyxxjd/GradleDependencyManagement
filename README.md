@@ -2,20 +2,22 @@
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "23.2.1"
+def supportVersion = "23.3.0"
 def rxBindingVersion = "0.4.0"
 def greenDAOVersion = "2.1.0"
+def retrofitVersion = "2.0.2"
 
 ext {
 
-    android = [compileSdkVersion: 23,
-               buildToolsVersion: "23.0.3",
-               applicationId    : "com.classic.gradleconfig",
-               minSdkVersion    : 14,
-               targetSdkVersion : 23,
-               versionCode      : 1,
-               versionName      : "1.0"
-               ]
+    android = [
+            compileSdkVersion: 23,
+            buildToolsVersion: "23.0.3",
+            applicationId    : "com.classic.android",
+            minSdkVersion    : 14,
+            targetSdkVersion : 23,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
 
     //官方库
     supportV4 = "com.android.support:support-v4:${supportVersion}"
@@ -23,7 +25,15 @@ ext {
     supportDesign = "com.android.support:design:${supportVersion}"
     supportCardView = "com.android.support:cardview-v7:${supportVersion}"
     supportRecyclerView = "com.android.support:recyclerview-v7:${supportVersion}"
+    supportGridLayout = "com.android.support:gridlayout-v7:${supportVersion}"
+    supportAnnotations = "com.android.support:support-annotations:${supportVersion}"
     supportMultidex = "com.android.support:multidex:1.0.+"
+
+    //基础项目
+    basicProject = "com.classic.core:classic:1.9"
+
+    //动画
+    nineoldandroids = "com.nineoldandroids:library:2.4.0"
 
     //图片加载
     glide = "com.github.bumptech.glide:glide:3.7.0"
@@ -38,7 +48,7 @@ ext {
     butterknife = "com.jakewharton:butterknife:7.0.1"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex:rxjava:1.1.1"
+    rxJava = "io.reactivex:rxjava:1.1.3"
     rxAndroid = "io.reactivex:rxandroid:1.1.0"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
@@ -48,7 +58,9 @@ ext {
     rxBindingLeanbackV17 = "com.jakewharton.rxbinding:rxbinding-leanback-v17:${rxBindingVersion}"
 
     //网络请求
-    retrofit = "com.squareup.retrofit2:retrofit:2.0.0"
+    retrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    gsonForRetrofit = "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    rxJavaForRetrofit = "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}"
     okhttp = "com.squareup.okhttp3:okhttp:3.2.0"
     volley = "com.mcxiaoke.volley:library:1.0.19"
 
@@ -57,6 +69,29 @@ ext {
     greenDAO = "de.greenrobot:greendao:${greenDAOVersion}"
     greenDAOGenerator = "de.greenrobot:greendao-generator:${greenDAOVersion}"
 
+    //事件总线
+    eventBus = "org.greenrobot:eventbus:3.0.0"
+    androidEventBus = "org.simple:androideventbus:latest"
+
+    //二维码扫描
+    zxing = "com.google.zxing:core:3.2.1"
+
+    //圆形ImageView
+    circleImageView = "de.hdodenhof:circleimageview:2.0.0"
+
+    //Material Design向下兼容库(Android 2.2+)
+    carbon = "tk.zielony:carbon:0.12.0"
+    //RecyclerView分割线
+    recyclerViewDivider = "com.yqritc:recyclerview-flexibledivider:1.2.9"
+    multipleStatusView = "com.classic.common:multiple-status-view:1.2"
+    //通用适配器
+    commonAdapter = "com.classic.adapter:commonadapter:1.1"
+    //方便的切换到：加载中视图、错误视图、空数据视图、网络异常视图、内容视图。
+    mutipleStatusView = "com.classic.common:multiple-status-view:1.1"
+    materialRefeshLayout = "com.cjj.materialrefeshlayout:library:1.3.0"
+    flycoTabLayout = "com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar"
+    //Android流式布局，支持单选、多选等，适合用于产品标签等
+    flowLayout = "com.zhy:flowlayout-lib:1.0.1"
 }
 ```
 
