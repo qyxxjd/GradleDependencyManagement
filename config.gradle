@@ -90,3 +90,15 @@ ext {
     flowLayout = "com.zhy:flowlayout-lib:1.0.1"
 
 }
+
+/** Gradle常用命令 */
+//  ./gradlew           下载更新gradle
+//  ./gradlew -v        版本号
+//  ./gradlew assemble  构建项目输出
+//  ./gradlew check     运行检测和测试任务
+//  ./gradlew clean     清除build文件夹
+//  ./gradlew build     编译打包,包含debug、release
+//  ./gradlew assembleDebug     编译并打debug包
+//  ./gradlew assembleRelease   编译并打release包
+//  ./gradlew installRelease    release打包并安装
+//  ./gradlew uninstallRelease  卸载release包
