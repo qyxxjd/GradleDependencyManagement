@@ -1,0 +1,5 @@
+Android Studio 导入设置方法：
+
+1、点击左上角 File 菜单；
+2、选择 Import Settings 选项,然后选择settings.jar
+3、重启 Android Studio。
