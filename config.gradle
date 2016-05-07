@@ -89,6 +89,11 @@ ext {
     //Android流式布局，支持单选、多选等，适合用于产品标签等
     flowLayout = "com.zhy:flowlayout-lib:1.0.1"
 
+    //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
+    flexboxLayout = "com.google.android:flexbox:0.1.1"
+
+
+
 }
 
 /** Gradle常用命令 */
