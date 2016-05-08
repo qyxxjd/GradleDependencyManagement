@@ -94,6 +94,11 @@ ext {
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
     flexboxLayout = "com.google.android:flexbox:0.1.1"
 
+    //日历控件
+    materialCalendarView = "com.prolificinteractive:material-calendarview:1.2.1"
+    sublimePicker = "com.appeaser.sublimepickerlibrary:sublimepickerlibrary:2.1.1"
+    pickerView = "com.bigkoo:pickerview:2.0.8"
+
 }
 
 /** Gradle常用命令 */
