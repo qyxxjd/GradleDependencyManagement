@@ -1,6 +1,6 @@
 def supportVersion = "23.3.0"
 def rxBindingVersion = "0.4.0"
-def greenDAOVersion = "2.1.0"
+def greenDAOVersion = "2.2.0"
 def retrofitVersion = "2.0.2"
 
 ext {
@@ -33,19 +33,21 @@ ext {
 
     //图片加载
     glide = "com.github.bumptech.glide:glide:3.7.0"
-    fresco = "com.facebook.fresco:fresco:0.9.0+"
+    fresco = "com.facebook.fresco:fresco:0.10.+"
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.8"
+    fastjson = "com.alibaba:fastjson:1.2.11"
+    fastjsonAndroid = "com.alibaba:fastjson:1.1.51.android"
 
     //view注入
-    dagger = "com.squareup.dagger:dagger:1.2.2"
-    butterknife = "com.jakewharton:butterknife:7.0.1"
+    dagger = "com.squareup.dagger:dagger:1.2.4"
+    butterknife = "com.jakewharton:butterknife:8.0.1"
+//    butterknife = "com.jakewharton:butterknife:7.0.1"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex:rxjava:1.1.3"
-    rxAndroid = "io.reactivex:rxandroid:1.1.0"
+    rxJava = "io.reactivex:rxjava:1.1.5"
+    rxAndroid = "io.reactivex:rxandroid:1.2.0"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
     rxBindingSupportAppcompatV7 = "com.jakewharton.rxbinding:rxbinding-appcompat-v7:${rxBindingVersion}"
@@ -61,7 +63,7 @@ ext {
     volley = "com.mcxiaoke.volley:library:1.0.19"
 
     //数据库
-    sqlbrite = "com.squareup.sqlbrite:sqlbrite:0.6.2"
+    sqlbrite = "com.squareup.sqlbrite:sqlbrite:0.6.3"
     greenDAO = "de.greenrobot:greendao:${greenDAOVersion}"
     greenDAOGenerator = "de.greenrobot:greendao-generator:${greenDAOVersion}"
 
@@ -87,12 +89,10 @@ ext {
     materialRefeshLayout = "com.cjj.materialrefeshlayout:library:1.3.0"
     flycoTabLayout = "com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar"
     //Android流式布局，支持单选、多选等，适合用于产品标签等
-    flowLayout = "com.zhy:flowlayout-lib:1.0.1"
+    flowLayout = "com.zhy:flowlayout-lib:1.0.3"
 
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
     flexboxLayout = "com.google.android:flexbox:0.1.1"
-
-
 
 }
 
