@@ -99,6 +99,12 @@ ext {
     sublimePicker = "com.appeaser.sublimepickerlibrary:sublimepickerlibrary:2.1.1"
     pickerView = "com.bigkoo:pickerview:2.0.8"
 
+    //图表控件
+    //repositories { maven { url "https://jitpack.io" } }
+    mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v2.2.4"
+    helloCharts = "com.github.lecho:hellocharts-library:1.5.8@aar"
+    williamChart = "com.diogobernardino:williamchart:2.2"
+
 }
 
 /** Gradle常用命令 */
