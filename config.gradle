@@ -126,6 +126,8 @@ ext {
     //检测UI卡顿
     blockCanary = "com.github.moduth:blockcanary-android:1.2.1"
 
+    //Switch开关
+    switchButton = "com.kyleduo.switchbutton:library:1.4.0"
 }
 
 /** Gradle常用命令 */
