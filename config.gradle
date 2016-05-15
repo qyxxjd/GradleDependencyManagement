@@ -128,6 +128,8 @@ ext {
 
     //Switch开关
     switchButton = "com.kyleduo.switchbutton:library:1.4.0"
+    //可高度自定义的Dialog
+    materialDialog = "com.afollestad.material-dialogs:core:0.8.5.9"
 }
 
 /** Gradle常用命令 */
