@@ -45,7 +45,7 @@ ext {
 
     //view注入
     dagger = "com.squareup.dagger:dagger:1.2.5"
-    butterknife = "com.jakewharton:butterknife:8.0.1"
+    butterknife = "com.jakewharton:butterknife:${butterknifeVersion}"
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
