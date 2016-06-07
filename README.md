@@ -15,7 +15,7 @@ ext {
     android = [
             compileSdkVersion: 23,
             buildToolsVersion: "23.0.3",
-            applicationId    : "com.classic.android",
+            applicationId    : "your package name",
             minSdkVersion    : 14,
             targetSdkVersion : 23,
             versionCode      : 1,
