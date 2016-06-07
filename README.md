@@ -2,10 +2,13 @@
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "23.3.0"
+def supportVersion = "23.4.0"
 def rxBindingVersion = "0.4.0"
-def greenDAOVersion = "2.1.0"
+def greenDAOVersion = "2.2.0"
 def retrofitVersion = "2.0.2"
+def stethoVersion = "1.3.1"
+def butterknifeVersion = "8.0.1"
+def leakCanaryVersion = "1.4-beta2"
 
 ext {
 
@@ -30,26 +33,28 @@ ext {
     supportMultidex = "com.android.support:multidex:1.0.+"
 
     //基础项目
-    basicProject = "com.classic.core:classic:1.9"
+    basicProject = "com.classic.core:classic:2.1"
 
     //动画
     nineoldandroids = "com.nineoldandroids:library:2.4.0"
 
     //图片加载
     glide = "com.github.bumptech.glide:glide:3.7.0"
-    fresco = "com.facebook.fresco:fresco:0.9.0+"
+    fresco = "com.facebook.fresco:fresco:0.10.+"
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.8"
+    fastjson = "com.alibaba:fastjson:1.2.12"
+    fastjsonAndroid = "com.alibaba:fastjson:1.1.52.android"
 
     //view注入
-    dagger = "com.squareup.dagger:dagger:1.2.2"
-    butterknife = "com.jakewharton:butterknife:7.0.1"
+    dagger = "com.squareup.dagger:dagger:1.2.5"
+    butterknife = "com.jakewharton:butterknife:8.0.1"
+    butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex:rxjava:1.1.3"
-    rxAndroid = "io.reactivex:rxandroid:1.1.0"
+    rxJava = "io.reactivex:rxjava:1.1.5"
+    rxAndroid = "io.reactivex:rxandroid:1.2.0"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
     rxBindingSupportAppcompatV7 = "com.jakewharton.rxbinding:rxbinding-appcompat-v7:${rxBindingVersion}"
@@ -57,41 +62,51 @@ ext {
     rxBindingSupportRecyclerView = "com.jakewharton.rxbinding:rxbinding-recyclerview-v7:${rxBindingVersion}"
     rxBindingLeanbackV17 = "com.jakewharton.rxbinding:rxbinding-leanback-v17:${rxBindingVersion}"
 
+    //google开源的异步框架
+    agera = "com.google.android.agera:agera:1.0.0-rc2"
+
     //网络请求
     retrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
     gsonForRetrofit = "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
     rxJavaForRetrofit = "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}"
-    okhttp = "com.squareup.okhttp3:okhttp:3.2.0"
+    okhttp = "com.squareup.okhttp3:okhttp:3.3.1"
     volley = "com.mcxiaoke.volley:library:1.0.19"
 
+    //facebook出品的网络调试神器
+    stetho = "com.facebook.stetho:stetho:${stethoVersion}"
+    stethoOkhttp = "com.facebook.stetho:stetho-okhttp3:${stethoVersion}"
+    stethoUrlConnection = "com.facebook.stetho:stetho-urlconnection:${stethoVersion}"
+    stethoJsRhino = "com.facebook.stetho:stetho-js-rhino:${stethoVersion}"
+
+    //基于LRU的磁盘缓存
+    diskLruCache = "com.jakewharton:disklrucache:2.0.2"
+
     //数据库
-    sqlbrite = "com.squareup.sqlbrite:sqlbrite:0.6.2"
+    sqlbrite = "com.squareup.sqlbrite:sqlbrite:0.6.3"
     greenDAO = "de.greenrobot:greendao:${greenDAOVersion}"
     greenDAOGenerator = "de.greenrobot:greendao-generator:${greenDAOVersion}"
 
     //事件总线
     eventBus = "org.greenrobot:eventbus:3.0.0"
     androidEventBus = "org.simple:androideventbus:latest"
+    otto = "com.squareup:otto:1.3.8"
 
     //二维码扫描
     zxing = "com.google.zxing:core:3.2.1"
 
-    //圆形ImageView
-    circleImageView = "de.hdodenhof:circleimageview:2.0.0"
-
     //Material Design向下兼容库(Android 2.2+)
-    carbon = "tk.zielony:carbon:0.12.0"
-    //RecyclerView分割线
-    recyclerViewDivider = "com.yqritc:recyclerview-flexibledivider:1.2.9"
-    multipleStatusView = "com.classic.common:multiple-status-view:1.2"
+    carbon = "tk.zielony:carbon:0.13.0"
     //通用适配器
     commonAdapter = "com.classic.adapter:commonadapter:1.1"
     //方便的切换到：加载中视图、错误视图、空数据视图、网络异常视图、内容视图。
-    mutipleStatusView = "com.classic.common:multiple-status-view:1.1"
-    materialRefeshLayout = "com.cjj.materialrefeshlayout:library:1.3.0"
-    flycoTabLayout = "com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar"
-    //Android流式布局，支持单选、多选等，适合用于产品标签等
-    flowLayout = "com.zhy:flowlayout-lib:1.0.1"
+    mutipleStatusView = "com.classic.common:multiple-status-view:1.2"
+
+    //检测内存泄漏
+    leakCanaryDebug = "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}"
+    leakCanaryRelease = "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanaryVersion}"
+    //检测UI卡顿
+    blockCanary = "com.github.moduth:blockcanary-android:1.2.1"
+
 }
 ```
 
@@ -135,12 +150,7 @@ android {
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
+    ...
 }
 
 dependencies {
