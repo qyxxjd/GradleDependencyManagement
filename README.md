@@ -7,7 +7,7 @@ def rxBindingVersion = "0.4.0"
 def greenDAOVersion = "2.2.1"
 def retrofitVersion = "2.1.0"
 def stethoVersion = "1.3.1"
-def butterknifeVersion = "8.1.0"
+def butterknifeVersion = "8.2.0"
 def leakCanaryVersion = "1.4-beta2"
 def dagger2Version = "2.5"
 
@@ -50,12 +50,12 @@ ext {
 
     //view注入
     dagger = "com.squareup.dagger:dagger:1.2.5"
-    butterknife = "com.jakewharton:butterknife:8.0.1"
+    butterknife = "com.jakewharton:butterknife:${butterknifeVersion}"
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex:rxjava:1.1.5"
-    rxAndroid = "io.reactivex:rxandroid:1.2.0"
+    rxJava = "io.reactivex:rxjava:1.1.7"
+    rxAndroid = "io.reactivex:rxandroid:1.2.1"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
     rxBindingSupportAppcompatV7 = "com.jakewharton.rxbinding:rxbinding-appcompat-v7:${rxBindingVersion}"
@@ -82,7 +82,7 @@ ext {
     diskLruCache = "com.jakewharton:disklrucache:2.0.2"
 
     //数据库
-    sqlbrite = "com.squareup.sqlbrite:sqlbrite:0.6.3"
+    sqlbrite = "com.squareup.sqlbrite:sqlbrite:0.7.0"
     greenDAO = "de.greenrobot:greendao:${greenDAOVersion}"
     greenDAOGenerator = "de.greenrobot:greendao-generator:2.2.0"
 

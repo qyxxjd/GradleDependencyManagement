@@ -79,7 +79,7 @@ ext {
     diskLruCache = "com.jakewharton:disklrucache:2.0.2"
 
     //数据库
-    sqlbrite = "com.squareup.sqlbrite:sqlbrite:0.6.3"
+    sqlbrite = "com.squareup.sqlbrite:sqlbrite:0.7.0"
     greenDAO = "de.greenrobot:greendao:${greenDAOVersion}"
     greenDAOGenerator = "de.greenrobot:greendao-generator:2.2.0"
 
