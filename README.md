@@ -7,7 +7,7 @@ def rxBindingVersion = "0.4.0"
 def greenDAOVersion = "2.2.1"
 def retrofitVersion = "2.1.0"
 def stethoVersion = "1.3.1"
-def butterknifeVersion = "8.2.0"
+def butterknifeVersion = "8.2.1"
 def leakCanaryVersion = "1.4-beta2"
 def dagger2Version = "2.5"
 
@@ -70,7 +70,7 @@ ext {
     retrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
     gsonForRetrofit = "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
     rxJavaForRetrofit = "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}"
-    okhttp = "com.squareup.okhttp3:okhttp:3.3.1"
+    okhttp = "com.squareup.okhttp3:okhttp:3.4.1"
 
     //facebook出品的网络调试神器
     stetho = "com.facebook.stetho:stetho:${stethoVersion}"
