@@ -1,11 +1,10 @@
 def supportVersion = "23.4.0"
 def rxBindingVersion = "0.4.0"
-def greenDAOVersion = "2.2.1"
 def retrofitVersion = "2.1.0"
 def stethoVersion = "1.3.1"
 def butterknifeVersion = "8.2.1"
 def leakCanaryVersion = "1.4-beta2"
-def dagger2Version = "2.5"
+def dagger2Version = "2.6"
 
 ext {
 
@@ -37,11 +36,11 @@ ext {
 
     //图片加载
     glide = "com.github.bumptech.glide:glide:3.7.0"
-    fresco = "com.facebook.fresco:fresco:0.11.+"
+    fresco = "com.facebook.fresco:fresco:0.12.+"
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.12"
+    fastjson = "com.alibaba:fastjson:1.2.15"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.52.android"
 
     //https://github.com/google/dagger
@@ -51,7 +50,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex:rxjava:1.1.7"
+    rxJava = "io.reactivex:rxjava:1.1.8"
     rxAndroid = "io.reactivex:rxandroid:1.2.1"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
@@ -80,8 +79,7 @@ ext {
 
     //数据库
     sqlbrite = "com.squareup.sqlbrite:sqlbrite:0.7.0"
-    greenDAO = "de.greenrobot:greendao:${greenDAOVersion}"
-    greenDAOGenerator = "de.greenrobot:greendao-generator:2.2.0"
+    greenDAO = "de.greenrobot:greendao:3.0.1"
 
     //二维码扫描
     zxing = "com.google.zxing:core:3.2.1"
@@ -99,17 +97,18 @@ ext {
     mutipleStatusView = "com.classic.common:multiple-status-view:1.2"
 
     //布局控件
-    flycoTabLayout = "com.flyco.tablayout:FlycoTabLayout_Lib:2.0.6@aar"
+    flycoTabLayout = "com.flyco.tablayout:FlycoTabLayout_Lib:2.0.8@aar"
     //Android流式布局，支持单选、多选等，适合用于产品标签等
     flowLayout = "com.zhy:flowlayout-lib:1.0.3"
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
-    flexboxLayout = "com.google.android:flexbox:0.2.2"
-    bottomBar = "com.roughike:bottom-bar:1.4.0"
+    flexboxLayout = "com.google.android:flexbox:0.2.3"
+    bottomBar = "com.roughike:bottom-bar:1.4.0.1"
+    navigationTabBar = "compile 'com.github.devlight.navigationtabbar:navigationtabbar:1.2.3'"
 
     //日历控件
     materialCalendarView = "com.prolificinteractive:material-calendarview:1.4.0"
     sublimePicker = "com.appeaser.sublimepickerlibrary:sublimepickerlibrary:2.1.1"
-    pickerView = "com.bigkoo:pickerview:2.0.8"
+    pickerView = "com.bigkoo:pickerview:2.1.0"
 
     //图表控件
     mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v2.2.5"
@@ -123,20 +122,8 @@ ext {
     blockCanary = "com.github.moduth:blockcanary-android:1.2.1"
 
     //Switch开关
-    switchButton = "com.kyleduo.switchbutton:library:1.4.1"
+    switchButton = "com.kyleduo.switchbutton:library:1.4.2"
     //可高度自定义的Dialog
-    materialDialog = "com.afollestad.material-dialogs:core:0.8.6.1"
+    materialDialog = "com.afollestad.material-dialogs:core:0.8.6.2"
 
 }
-
-/** Gradle常用命令 */
-//  ./gradlew           下载更新gradle
-//  ./gradlew -v        版本号
-//  ./gradlew assemble  构建项目输出
-//  ./gradlew check     运行检测和测试任务
-//  ./gradlew clean     清除build文件夹
-//  ./gradlew build     编译打包,包含debug、release
-//  ./gradlew assembleDebug     编译并打debug包
-//  ./gradlew assembleRelease   编译并打release包
-//  ./gradlew installRelease    release打包并安装
-//  ./gradlew uninstallRelease  卸载release包
