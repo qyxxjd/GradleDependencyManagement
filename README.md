@@ -1,15 +1,31 @@
+## Gradle常用命令
+windows下去掉前面的`./`
+```
+./gradlew           //下载更新gradle
+./gradlew -v        //版本号
+./gradlew assemble  //构建项目输出
+./gradlew check     //运行检测和测试任务
+./gradlew clean     //清除build文件夹
+./gradlew build     //编译打包,包含debug、release
+./gradlew assembleDebug     //编译并打debug包
+./gradlew assembleRelease   //编译并打release包
+./gradlew installRelease    //release打包并安装
+./gradlew uninstallRelease  //卸载release包
+./gradlew app:dependencies  //查看依赖关系
+```
+
+
 ## Gradle依赖统一管理
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
 def supportVersion = "23.4.0"
 def rxBindingVersion = "0.4.0"
-def greenDAOVersion = "2.2.1"
 def retrofitVersion = "2.1.0"
 def stethoVersion = "1.3.1"
 def butterknifeVersion = "8.2.1"
 def leakCanaryVersion = "1.4-beta2"
-def dagger2Version = "2.5"
+def dagger2Version = "2.6"
 
 ext {
 
@@ -31,30 +47,33 @@ ext {
     supportRecyclerView = "com.android.support:recyclerview-v7:${supportVersion}"
     supportGridLayout = "com.android.support:gridlayout-v7:${supportVersion}"
     supportAnnotations = "com.android.support:support-annotations:${supportVersion}"
-    supportMultidex = "com.android.support:multidex:1.0.+"
 
     //基础项目
     basicProject = "com.classic.core:classic:2.1"
-
+    //通用适配器
+    commonAdapter = "com.classic.adapter:commonadapter:1.2"
+    //方便的切换到：加载中视图、错误视图、空数据视图、网络异常视图、内容视图。
+    mutipleStatusView = "com.classic.common:multiple-status-view:1.2"
     //动画
     nineoldandroids = "com.nineoldandroids:library:2.4.0"
 
     //图片加载
     glide = "com.github.bumptech.glide:glide:3.7.0"
-    fresco = "com.facebook.fresco:fresco:0.10.+"
+    fresco = "com.facebook.fresco:fresco:0.12.+"
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.12"
+    fastjson = "com.alibaba:fastjson:1.2.15"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.52.android"
 
-    //view注入
-    dagger = "com.squareup.dagger:dagger:1.2.5"
+    //https://github.com/google/dagger
+    dagger2 = "com.google.dagger:dagger:${dagger2Version}"
+    dagger2Compiler = "com.google.dagger:dagger-compiler:${dagger2Version}"
     butterknife = "com.jakewharton:butterknife:${butterknifeVersion}"
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex:rxjava:1.1.7"
+    rxJava = "io.reactivex:rxjava:1.1.8"
     rxAndroid = "io.reactivex:rxandroid:1.2.1"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
@@ -62,7 +81,6 @@ ext {
     rxBindingSupportDesign = "com.jakewharton.rxbinding:rxbinding-design:${rxBindingVersion}"
     rxBindingSupportRecyclerView = "com.jakewharton.rxbinding:rxbinding-recyclerview-v7:${rxBindingVersion}"
     rxBindingLeanbackV17 = "com.jakewharton.rxbinding:rxbinding-leanback-v17:${rxBindingVersion}"
-
     //google开源的异步框架
     agera = "com.google.android.agera:agera:1.1.0"
 
@@ -77,24 +95,6 @@ ext {
     stethoOkhttp = "com.facebook.stetho:stetho-okhttp3:${stethoVersion}"
     stethoUrlConnection = "com.facebook.stetho:stetho-urlconnection:${stethoVersion}"
     stethoJsRhino = "com.facebook.stetho:stetho-js-rhino:${stethoVersion}"
-
-    //基于LRU的磁盘缓存
-    diskLruCache = "com.jakewharton:disklrucache:2.0.2"
-
-    //数据库
-    sqlbrite = "com.squareup.sqlbrite:sqlbrite:0.7.0"
-    greenDAO = "de.greenrobot:greendao:${greenDAOVersion}"
-    greenDAOGenerator = "de.greenrobot:greendao-generator:2.2.0"
-
-    //二维码扫描
-    zxing = "com.google.zxing:core:3.2.1"
-
-    //Material Design向下兼容库(Android 2.2+)
-    carbon = "tk.zielony:carbon:0.13.0"
-    //通用适配器
-    commonAdapter = "com.classic.adapter:commonadapter:1.2"
-    //方便的切换到：加载中视图、错误视图、空数据视图、网络异常视图、内容视图。
-    mutipleStatusView = "com.classic.common:multiple-status-view:1.2"
 
     //检测内存泄漏
     leakCanaryDebug = "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}"
@@ -115,7 +115,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.5.0'
+        classpath 'com.android.tools.build:gradle:2.1.2'
     }
 }
 
