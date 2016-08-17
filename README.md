@@ -19,7 +19,7 @@ windows下去掉前面的`./`
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "23.4.0"
+def supportVersion = "24.1.1"
 def rxBindingVersion = "0.4.0"
 def retrofitVersion = "2.1.0"
 def stethoVersion = "1.3.1"
@@ -30,11 +30,11 @@ def dagger2Version = "2.6"
 ext {
 
     android = [
-            compileSdkVersion: 23,
-            buildToolsVersion: "23.0.3",
+            compileSdkVersion: 24,
+            buildToolsVersion: "24.0.1",
             applicationId    : "your package name",
             minSdkVersion    : 14,
-            targetSdkVersion : 23,
+            targetSdkVersion : 24,
             versionCode      : 1,
             versionName      : "1.0"
     ]
@@ -73,7 +73,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex:rxjava:1.1.8"
+    rxJava = "io.reactivex:rxjava:1.1.9"
     rxAndroid = "io.reactivex:rxandroid:1.2.1"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
@@ -82,7 +82,7 @@ ext {
     rxBindingSupportRecyclerView = "com.jakewharton.rxbinding:rxbinding-recyclerview-v7:${rxBindingVersion}"
     rxBindingLeanbackV17 = "com.jakewharton.rxbinding:rxbinding-leanback-v17:${rxBindingVersion}"
     //google开源的异步框架
-    agera = "com.google.android.agera:agera:1.1.0"
+    agera = "com.google.android.agera:agera:1.2.0-beta2"
 
     //网络请求
     retrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
@@ -115,7 +115,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.2'
+        classpath 'com.android.tools.build:gradle:2.1.3'
     }
 }
 
