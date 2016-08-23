@@ -19,7 +19,7 @@ windows下去掉前面的`./`
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "24.1.1"
+def supportVersion = "24.2.0"
 def rxBindingVersion = "0.4.0"
 def retrofitVersion = "2.1.0"
 def stethoVersion = "1.3.1"
