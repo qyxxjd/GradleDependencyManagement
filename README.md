@@ -19,19 +19,20 @@ windows下去掉前面的`./`
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "24.2.0"
+def supportVersion = "24.2.1"
 def rxBindingVersion = "0.4.0"
 def retrofitVersion = "2.1.0"
-def stethoVersion = "1.3.1"
-def butterknifeVersion = "8.2.1"
+def stethoVersion = "1.4.1"
+def butterknifeVersion = "8.4.0"
 def leakCanaryVersion = "1.4-beta2"
-def dagger2Version = "2.6"
+def blockCanaryVersion = "1.3.1"
+def dagger2Version = "2.7"
 
 ext {
 
     android = [
             compileSdkVersion: 24,
-            buildToolsVersion: "24.0.1",
+            buildToolsVersion: "24.0.2",
             applicationId    : "your package name",
             minSdkVersion    : 14,
             targetSdkVersion : 24,
@@ -49,7 +50,7 @@ ext {
     supportAnnotations = "com.android.support:support-annotations:${supportVersion}"
 
     //基础项目
-    basicProject = "com.classic.core:classic:2.1"
+    basicProject = "com.classic.core:classic:2.2"
     //通用适配器
     commonAdapter = "com.classic.adapter:commonadapter:1.2"
     //方便的切换到：加载中视图、错误视图、空数据视图、网络异常视图、内容视图。
@@ -63,8 +64,8 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.15"
-    fastjsonAndroid = "com.alibaba:fastjson:1.1.52.android"
+    fastjson = "com.alibaba:fastjson:1.2.17"
+    fastjsonAndroid = "com.alibaba:fastjson:1.1.54.android"
 
     //https://github.com/google/dagger
     dagger2 = "com.google.dagger:dagger:${dagger2Version}"
@@ -73,7 +74,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex:rxjava:1.1.9"
+    rxJava = "io.reactivex:rxjava:1.2.0"
     rxAndroid = "io.reactivex:rxandroid:1.2.1"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
@@ -100,7 +101,8 @@ ext {
     leakCanaryDebug = "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}"
     leakCanaryRelease = "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanaryVersion}"
     //检测UI卡顿
-    blockCanary = "com.github.moduth:blockcanary-android:1.2.1"
+    blockCanaryDebug = "com.github.markzhai:blockcanary-android:${blockCanaryVersion}"
+    blockCanaryRelease = "com.github.markzhai:blockcanary-no-op:${blockCanaryVersion}"
 
 }
 ```

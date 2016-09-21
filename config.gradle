@@ -1,10 +1,11 @@
-def supportVersion = "24.2.0"
+def supportVersion = "24.2.1"
 def rxBindingVersion = "0.4.0"
 def retrofitVersion = "2.1.0"
-def stethoVersion = "1.3.1"
-def butterknifeVersion = "8.2.1"
+def stethoVersion = "1.4.1"
+def butterknifeVersion = "8.4.0"
 def leakCanaryVersion = "1.4-beta2"
-def dagger2Version = "2.6.1"
+def blockCanaryVersion = "1.3.1"
+def dagger2Version = "2.7"
 
 ext {
 
@@ -26,10 +27,10 @@ ext {
     supportRecyclerView = "com.android.support:recyclerview-v7:${supportVersion}"
     supportGridLayout = "com.android.support:gridlayout-v7:${supportVersion}"
     supportAnnotations = "com.android.support:support-annotations:${supportVersion}"
-    supportMultidex = "com.android.support:multidex:1.0.+"
+    supportMultidex = "com.android.support:multidex:+"
 
     //基础项目
-    basicProject = "com.classic.core:classic:2.1"
+    basicProject = "com.classic.core:classic:2.2"
 
     //动画
     nineoldandroids = "com.nineoldandroids:library:2.4.0"
@@ -40,7 +41,7 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.16"
+    fastjson = "com.alibaba:fastjson:1.2.17"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.54.android"
 
     //https://github.com/google/dagger
@@ -50,7 +51,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex:rxjava:1.1.9"
+    rxJava = "io.reactivex:rxjava:1.2.0"
     rxAndroid = "io.reactivex:rxandroid:1.2.1"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
@@ -82,7 +83,7 @@ ext {
     greenDAO = "org.greenrobot:greendao:3.1.1"
 
     //二维码扫描
-    zxing = "com.google.zxing:core:3.2.1"
+    zxing = "com.google.zxing:core:3.3.0"
 
     //圆形ImageView
     circleImageView = "de.hdodenhof:circleimageview:2.1.0"
@@ -96,19 +97,17 @@ ext {
     //方便的切换到：加载中视图、错误视图、空数据视图、网络异常视图、内容视图。
     mutipleStatusView = "com.classic.common:multiple-status-view:1.2"
 
-    //布局控件
-    flycoTabLayout = "com.flyco.tablayout:FlycoTabLayout_Lib:2.0.8@aar"
     //Android流式布局，支持单选、多选等，适合用于产品标签等
     flowLayout = "com.zhy:flowlayout-lib:1.0.3"
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
     flexboxLayout = "com.google.android:flexbox:0.2.3"
-    bottomBar = "com.roughike:bottom-bar:1.4.0.1"
+    bottomBar = "com.roughike:bottom-bar:2.0.2"
     navigationTabBar = "com.github.devlight.navigationtabbar:navigationtabbar:1.2.5"
 
     //日历控件
     materialCalendarView = "com.prolificinteractive:material-calendarview:1.4.0"
     sublimePicker = "com.appeaser.sublimepickerlibrary:sublimepickerlibrary:2.1.1"
-    pickerView = "com.bigkoo:pickerview:2.1.0"
+    pickerView = "com.bigkoo:pickerview:2.1.1"
 
     //图表控件
     mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v2.2.5"
@@ -119,11 +118,12 @@ ext {
     leakCanaryDebug = "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}"
     leakCanaryRelease = "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanaryVersion}"
     //检测UI卡顿
-    blockCanary = "com.github.moduth:blockcanary-android:1.2.1"
+    blockCanaryDebug = "com.github.markzhai:blockcanary-android:${blockCanaryVersion}"
+    blockCanaryRelease = "com.github.markzhai:blockcanary-no-op:${blockCanaryVersion}"
 
     //Switch开关
-    switchButton = "com.kyleduo.switchbutton:library:1.4.3"
+    switchButton = "com.kyleduo.switchbutton:library:1.4.4"
     //可高度自定义的Dialog
-    materialDialog = "com.afollestad.material-dialogs:core:0.9.0.1"
+    materialDialog = "com.afollestad.material-dialogs:core:0.9.0.2"
 
 }
