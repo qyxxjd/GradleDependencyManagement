@@ -24,7 +24,7 @@ def rxBindingVersion = "0.4.0"
 def retrofitVersion = "2.1.0"
 def stethoVersion = "1.4.1"
 def butterknifeVersion = "8.4.0"
-def leakCanaryVersion = "1.4-beta2"
+def leakCanaryVersion = "1.5"
 def blockCanaryVersion = "1.3.1"
 def dagger2Version = "2.7"
 
@@ -50,7 +50,7 @@ ext {
     supportAnnotations = "com.android.support:support-annotations:${supportVersion}"
 
     //基础项目
-    basicProject = "com.classic.core:classic:2.2"
+    basicProject = "com.classic.core:classic:2.2.1"
     //通用适配器
     commonAdapter = "com.classic.adapter:commonadapter:1.2"
     //方便的切换到：加载中视图、错误视图、空数据视图、网络异常视图、内容视图。
@@ -60,7 +60,7 @@ ext {
 
     //图片加载
     glide = "com.github.bumptech.glide:glide:3.7.0"
-    fresco = "com.facebook.fresco:fresco:0.12.+"
+    fresco = "com.facebook.fresco:fresco:0.14.+"
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
@@ -74,7 +74,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex:rxjava:1.2.0"
+    rxJava = "io.reactivex:rxjava:1.2.1"
     rxAndroid = "io.reactivex:rxandroid:1.2.1"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"

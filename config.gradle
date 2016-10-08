@@ -3,7 +3,7 @@ def rxBindingVersion = "0.4.0"
 def retrofitVersion = "2.1.0"
 def stethoVersion = "1.4.1"
 def butterknifeVersion = "8.4.0"
-def leakCanaryVersion = "1.4-beta2"
+def leakCanaryVersion = "1.5"
 def blockCanaryVersion = "1.3.1"
 def dagger2Version = "2.7"
 
@@ -30,14 +30,14 @@ ext {
     supportMultidex = "com.android.support:multidex:+"
 
     //基础项目
-    basicProject = "com.classic.core:classic:2.2"
+    basicProject = "com.classic.core:classic:2.2.1"
 
     //动画
     nineoldandroids = "com.nineoldandroids:library:2.4.0"
 
     //图片加载
     glide = "com.github.bumptech.glide:glide:3.7.0"
-    fresco = "com.facebook.fresco:fresco:0.13.+"
+    fresco = "com.facebook.fresco:fresco:0.14.+"
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
@@ -51,7 +51,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex:rxjava:1.2.0"
+    rxJava = "io.reactivex:rxjava:1.2.1"
     rxAndroid = "io.reactivex:rxandroid:1.2.1"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
@@ -112,7 +112,7 @@ ext {
     //图表控件
     mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v2.2.5"
     helloCharts = "com.github.lecho:hellocharts-library:1.5.8@aar"
-    williamChart = "com.diogobernardino:williamchart:2.2"
+    williamChart = "com.diogobernardino:williamchart:2.3.0"
 
     //检测内存泄漏
     leakCanaryDebug = "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}"
