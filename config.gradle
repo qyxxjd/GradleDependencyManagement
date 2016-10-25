@@ -1,4 +1,4 @@
-def supportVersion = "24.2.1"
+def supportVersion = "25.0.0"
 def rxBindingVersion = "0.4.0"
 def retrofitVersion = "2.1.0"
 def stethoVersion = "1.4.1"
@@ -10,11 +10,11 @@ def dagger2Version = "2.7"
 ext {
 
     android = [
-            compileSdkVersion: 24,
-            buildToolsVersion: "24.0.2",
+            compileSdkVersion: 25,
+            buildToolsVersion: "25.0.0",
             applicationId    : "com.classic.android",
             minSdkVersion    : 14,
-            targetSdkVersion : 24,
+            targetSdkVersion : 25,
             versionCode      : 1,
             versionName      : "1.0"
     ]
@@ -41,7 +41,7 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.17"
+    fastjson = "com.alibaba:fastjson:1.2.20"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.54.android"
 
     //https://github.com/google/dagger
@@ -79,7 +79,7 @@ ext {
     diskLruCache = "com.jakewharton:disklrucache:2.0.2"
 
     //数据库
-    sqlbrite = "com.squareup.sqlbrite:sqlbrite:0.7.0"
+    sqlbrite = "com.squareup.sqlbrite:sqlbrite:0.8.0"
     greenDAO = "org.greenrobot:greendao:3.1.1"
 
     //二维码扫描
@@ -88,8 +88,6 @@ ext {
     //圆形ImageView
     circleImageView = "de.hdodenhof:circleimageview:2.1.0"
 
-    //Material Design向下兼容库(Android 2.2+)
-    carbon = "tk.zielony:carbon:0.13.0"
     //RecyclerView分割线
     recyclerViewDivider = "com.yqritc:recyclerview-flexibledivider:1.4.0"
     //通用适配器
@@ -110,7 +108,7 @@ ext {
     pickerView = "com.bigkoo:pickerview:2.1.1"
 
     //图表控件
-    mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v2.2.5"
+    mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v3.0.0"
     helloCharts = "com.github.lecho:hellocharts-library:1.5.8@aar"
     williamChart = "com.diogobernardino:williamchart:2.3.0"
 
