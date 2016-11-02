@@ -19,7 +19,7 @@ windows下去掉前面的`./`
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "24.2.1"
+def supportVersion = "25.0.0"
 def rxBindingVersion = "0.4.0"
 def retrofitVersion = "2.1.0"
 def stethoVersion = "1.4.1"
@@ -27,15 +27,16 @@ def butterknifeVersion = "8.4.0"
 def leakCanaryVersion = "1.5"
 def blockCanaryVersion = "1.3.1"
 def dagger2Version = "2.7"
+def okhttpVersion = "3.4.1"
 
 ext {
 
     android = [
-            compileSdkVersion: 24,
-            buildToolsVersion: "24.0.2",
+            compileSdkVersion: 25,
+            buildToolsVersion: "25.0.0",
             applicationId    : "your package name",
             minSdkVersion    : 14,
-            targetSdkVersion : 24,
+            targetSdkVersion : 25,
             versionCode      : 1,
             versionName      : "1.0"
     ]
@@ -74,8 +75,8 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex:rxjava:1.2.1"
-    rxAndroid = "io.reactivex:rxandroid:1.2.1"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.0.0"
+    rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.0"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
     rxBindingSupportAppcompatV7 = "com.jakewharton.rxbinding:rxbinding-appcompat-v7:${rxBindingVersion}"
@@ -89,7 +90,8 @@ ext {
     retrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
     gsonForRetrofit = "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
     rxJavaForRetrofit = "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}"
-    okhttp = "com.squareup.okhttp3:okhttp:3.4.1"
+    okhttp = "com.squareup.okhttp3:okhttp:${okhttpVersion}"
+    okhttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}"
 
     //facebook出品的网络调试神器
     stetho = "com.facebook.stetho:stetho:${stethoVersion}"
@@ -117,7 +119,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.3'
+        classpath 'com.android.tools.build:gradle:2.2.2'
     }
 }
 
