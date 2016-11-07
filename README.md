@@ -25,9 +25,9 @@ def retrofitVersion = "2.1.0"
 def stethoVersion = "1.4.1"
 def butterknifeVersion = "8.4.0"
 def leakCanaryVersion = "1.5"
-def blockCanaryVersion = "1.3.1"
+def blockCanaryVersion = "1.4.0"
 def dagger2Version = "2.7"
-def okhttpVersion = "3.4.1"
+def okhttpVersion = "3.4.2"
 
 ext {
 
@@ -84,7 +84,7 @@ ext {
     rxBindingSupportRecyclerView = "com.jakewharton.rxbinding:rxbinding-recyclerview-v7:${rxBindingVersion}"
     rxBindingLeanbackV17 = "com.jakewharton.rxbinding:rxbinding-leanback-v17:${rxBindingVersion}"
     //google开源的异步框架
-    agera = "com.google.android.agera:agera:1.2.0-beta2"
+    agera = "com.google.android.agera:agera:1.2.0-beta3"
 
     //网络请求
     retrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
