@@ -19,21 +19,21 @@ windows下去掉前面的`./`
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "25.0.0"
+def supportVersion = "25.0.1"
 def rxBindingVersion = "0.4.0"
 def retrofitVersion = "2.1.0"
 def stethoVersion = "1.4.1"
 def butterknifeVersion = "8.4.0"
 def leakCanaryVersion = "1.5"
 def blockCanaryVersion = "1.4.0"
-def dagger2Version = "2.7"
+def dagger2Version = "2.8"
 def okhttpVersion = "3.4.2"
 
 ext {
 
     android = [
             compileSdkVersion: 25,
-            buildToolsVersion: "25.0.0",
+            buildToolsVersion: "25.0.1",
             applicationId    : "your package name",
             minSdkVersion    : 14,
             targetSdkVersion : 25,
@@ -75,8 +75,8 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.0.0"
-    rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.0"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.0.1"
+    rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
     rxBindingSupportAppcompatV7 = "com.jakewharton.rxbinding:rxbinding-appcompat-v7:${rxBindingVersion}"
