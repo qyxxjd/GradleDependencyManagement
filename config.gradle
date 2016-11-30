@@ -54,7 +54,7 @@ ext {
     //Rx家族，响应式编程
     rxJava = "io.reactivex.rxjava2:rxjava:2.0.1"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
-//    rxJava = "io.reactivex:rxjava:1.2.1"
+//    rxJava = "io.reactivex:rxjava:1.2.3"
 //    rxAndroid = "io.reactivex:rxandroid:1.2.1"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
@@ -64,7 +64,7 @@ ext {
     rxBindingLeanbackV17 = "com.jakewharton.rxbinding:rxbinding-leanback-v17:${rxBindingVersion}"
 
     //google开源的异步框架
-    agera = "com.google.android.agera:agera:1.2.0-beta3"
+    agera = "com.google.android.agera:agera:1.2.0"
 
     //网络请求
     retrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
@@ -109,7 +109,7 @@ ext {
     pickerView = "com.bigkoo:pickerview:2.1.1"
 
     //图表控件
-    mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v3.0.0"
+    mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v3.0.1"
     helloCharts = "com.github.lecho:hellocharts-library:1.5.8@aar"
     williamChart = "com.diogobernardino:williamchart:2.3.0"
 
