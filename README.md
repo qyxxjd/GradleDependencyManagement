@@ -20,14 +20,14 @@ windows下去掉前面的`./`
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
 def supportVersion = "25.0.1"
-def rxBindingVersion = "0.4.0"
+def rxBindingVersion = "1.0.0"
 def retrofitVersion = "2.1.0"
 def stethoVersion = "1.4.1"
 def butterknifeVersion = "8.4.0"
 def leakCanaryVersion = "1.5"
 def blockCanaryVersion = "1.4.0"
 def dagger2Version = "2.8"
-def okhttpVersion = "3.4.2"
+def okhttpVersion = "3.5.0"
 
 ext {
 
@@ -53,7 +53,7 @@ ext {
     //基础项目
     basicProject = "com.classic.core:classic:2.2.1"
     //通用适配器
-    commonAdapter = "com.classic.adapter:commonadapter:1.2"
+    commonAdapter = "com.classic.adapter:commonadapter:1.4"
     //方便的切换到：加载中视图、错误视图、空数据视图、网络异常视图、内容视图。
     mutipleStatusView = "com.classic.common:multiple-status-view:1.2"
     //动画
@@ -65,8 +65,8 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.17"
-    fastjsonAndroid = "com.alibaba:fastjson:1.1.54.android"
+    fastjson = "com.alibaba:fastjson:1.2.21"
+    fastjsonAndroid = "com.alibaba:fastjson:1.1.55.android"
 
     //https://github.com/google/dagger
     dagger2 = "com.google.dagger:dagger:${dagger2Version}"
@@ -75,7 +75,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.0.1"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.0.2"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
@@ -84,7 +84,7 @@ ext {
     rxBindingSupportRecyclerView = "com.jakewharton.rxbinding:rxbinding-recyclerview-v7:${rxBindingVersion}"
     rxBindingLeanbackV17 = "com.jakewharton.rxbinding:rxbinding-leanback-v17:${rxBindingVersion}"
     //google开源的异步框架
-    agera = "com.google.android.agera:agera:1.2.0-beta3"
+    agera = "com.google.android.agera:agera:1.2.0"
 
     //网络请求
     retrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
