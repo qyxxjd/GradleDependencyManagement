@@ -99,7 +99,7 @@ ext {
     //Android流式布局，支持单选、多选等，适合用于产品标签等
     flowLayout = "com.zhy:flowlayout-lib:1.0.3"
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
-    flexboxLayout = "com.google.android:flexbox:0.2.4"
+    flexboxLayout = "com.google.android:flexbox:0.2.5"
     bottomBar = "com.roughike:bottom-bar:2.0.2"
     navigationTabBar = "com.github.devlight.navigationtabbar:navigationtabbar:1.2.5"
 
@@ -125,4 +125,5 @@ ext {
     //可高度自定义的Dialog
     materialDialog = "com.afollestad.material-dialogs:core:0.9.1.0"
     xLog = "com.elvishew:xlog:1.2.1"
+    avLoading = "com.wang.avi:library:2.1.3"
 }
