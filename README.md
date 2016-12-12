@@ -56,8 +56,6 @@ ext {
     commonAdapter = "com.classic.adapter:commonadapter:1.4"
     //方便的切换到：加载中视图、错误视图、空数据视图、网络异常视图、内容视图。
     mutipleStatusView = "com.classic.common:multiple-status-view:1.2"
-    //动画
-    nineoldandroids = "com.nineoldandroids:library:2.4.0"
 
     //图片加载
     glide = "com.github.bumptech.glide:glide:3.7.0"
@@ -65,7 +63,7 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.21"
+    fastjson = "com.alibaba:fastjson:1.2.22"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.55.android"
 
     //https://github.com/google/dagger
