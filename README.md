@@ -19,10 +19,10 @@ windows下去掉前面的`./`
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "25.0.1"
+def supportVersion = "25.1.0"
 def rxBindingVersion = "1.0.0"
 def retrofitVersion = "2.1.0"
-def stethoVersion = "1.4.1"
+def stethoVersion = "1.4.2"
 def butterknifeVersion = "8.4.0"
 def leakCanaryVersion = "1.5"
 def blockCanaryVersion = "1.4.0"
@@ -33,7 +33,7 @@ ext {
 
     android = [
             compileSdkVersion: 25,
-            buildToolsVersion: "25.0.1",
+            buildToolsVersion: "25.0.2",
             applicationId    : "your package name",
             minSdkVersion    : 14,
             targetSdkVersion : 25,
@@ -59,7 +59,7 @@ ext {
 
     //图片加载
     glide = "com.github.bumptech.glide:glide:3.7.0"
-    fresco = "com.facebook.fresco:fresco:0.14.+"
+    fresco = "com.facebook.fresco:fresco:1.0.0"
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
