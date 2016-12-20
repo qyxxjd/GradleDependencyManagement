@@ -31,7 +31,10 @@ ext {
     supportMultidex = "com.android.support:multidex:+"
 
     //基础项目
-    basicProject = "com.classic.core:classic:2.2.1"
+    baseProject = "com.classic.android:core:1.0"
+    rxProject = "com.classic.android:rxjava:1.1"
+    httpProject = "com.classic.android:okhttp:1.1"
+    utils = "com.classic.android:utils:1.0"
 
     //动画
     nineoldandroids = "com.nineoldandroids:library:2.4.0"
@@ -52,7 +55,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.0.2"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.0.3"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
 //    rxJava = "io.reactivex:rxjava:1.2.4"
 //    rxAndroid = "io.reactivex:rxandroid:1.2.1"
@@ -80,7 +83,7 @@ ext {
     stethoJsRhino = "com.facebook.stetho:stetho-js-rhino:${stethoVersion}"
 
     //数据库
-    sqlbrite = "com.squareup.sqlbrite:sqlbrite:1.0.0"
+    sqlbrite = "com.squareup.sqlbrite:sqlbrite:1.1.0"
     greenDAO = "org.greenrobot:greendao:3.2.0"
 
     //二维码扫描
@@ -92,7 +95,7 @@ ext {
     //RecyclerView分割线
     recyclerViewDivider = "com.yqritc:recyclerview-flexibledivider:1.4.0"
     //通用适配器
-    commonAdapter = "com.classic.adapter:commonadapter:1.4"
+    commonAdapter = "com.classic.adapter:commonadapter:1.5"
     //方便的切换到：加载中视图、错误视图、空数据视图、网络异常视图、内容视图。
     mutipleStatusView = "com.classic.common:multiple-status-view:1.2"
 

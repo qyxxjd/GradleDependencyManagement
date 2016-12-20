@@ -50,13 +50,6 @@ ext {
     supportGridLayout = "com.android.support:gridlayout-v7:${supportVersion}"
     supportAnnotations = "com.android.support:support-annotations:${supportVersion}"
 
-    //基础项目
-    basicProject = "com.classic.core:classic:2.2.1"
-    //通用适配器
-    commonAdapter = "com.classic.adapter:commonadapter:1.4"
-    //方便的切换到：加载中视图、错误视图、空数据视图、网络异常视图、内容视图。
-    mutipleStatusView = "com.classic.common:multiple-status-view:1.2"
-
     //图片加载
     glide = "com.github.bumptech.glide:glide:3.7.0"
     fresco = "com.facebook.fresco:fresco:1.0.0"
@@ -73,7 +66,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.0.2"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.0.3"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
@@ -81,8 +74,6 @@ ext {
     rxBindingSupportDesign = "com.jakewharton.rxbinding:rxbinding-design:${rxBindingVersion}"
     rxBindingSupportRecyclerView = "com.jakewharton.rxbinding:rxbinding-recyclerview-v7:${rxBindingVersion}"
     rxBindingLeanbackV17 = "com.jakewharton.rxbinding:rxbinding-leanback-v17:${rxBindingVersion}"
-    //google开源的异步框架
-    agera = "com.google.android.agera:agera:1.2.0"
 
     //网络请求
     retrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
@@ -96,14 +87,6 @@ ext {
     stethoOkhttp = "com.facebook.stetho:stetho-okhttp3:${stethoVersion}"
     stethoUrlConnection = "com.facebook.stetho:stetho-urlconnection:${stethoVersion}"
     stethoJsRhino = "com.facebook.stetho:stetho-js-rhino:${stethoVersion}"
-
-    //检测内存泄漏
-    leakCanaryDebug = "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}"
-    leakCanaryRelease = "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanaryVersion}"
-    //检测UI卡顿
-    blockCanaryDebug = "com.github.markzhai:blockcanary-android:${blockCanaryVersion}"
-    blockCanaryRelease = "com.github.markzhai:blockcanary-no-op:${blockCanaryVersion}"
-
 }
 ```
 
