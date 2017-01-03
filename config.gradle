@@ -45,7 +45,7 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.22"
+    fastjson = "com.alibaba:fastjson:1.2.23"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.55.android"
 
     //https://github.com/google/dagger
@@ -83,7 +83,7 @@ ext {
     stethoJsRhino = "com.facebook.stetho:stetho-js-rhino:${stethoVersion}"
 
     //数据库
-    sqlbrite = "com.squareup.sqlbrite:sqlbrite:1.1.0"
+    sqlbrite = "com.squareup.sqlbrite:sqlbrite:1.1.1"
     greenDAO = "org.greenrobot:greendao:3.2.0"
 
     //二维码扫描

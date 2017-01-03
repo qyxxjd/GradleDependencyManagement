@@ -56,7 +56,7 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.22"
+    fastjson = "com.alibaba:fastjson:1.2.23"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.55.android"
 
     //https://github.com/google/dagger
