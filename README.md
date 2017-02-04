@@ -19,15 +19,15 @@ windows下去掉前面的`./`
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "25.1.0"
+def supportVersion = "25.1.1"
 def rxBindingVersion = "1.0.0"
 def retrofitVersion = "2.1.0"
 def stethoVersion = "1.4.2"
-def butterknifeVersion = "8.4.0"
+def butterknifeVersion = "8.5.1"
 def leakCanaryVersion = "1.5"
-def blockCanaryVersion = "1.4.0"
-def dagger2Version = "2.8"
-def okhttpVersion = "3.5.0"
+def blockCanaryVersion = "1.4.1"
+def dagger2Version = "2.9"
+def okhttpVersion = "3.6.0"
 
 ext {
 
@@ -52,12 +52,12 @@ ext {
 
     //图片加载
     glide = "com.github.bumptech.glide:glide:3.7.0"
-    fresco = "com.facebook.fresco:fresco:1.0.0"
+    fresco = "com.facebook.fresco:fresco:1.0.1"
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.23"
-    fastjsonAndroid = "com.alibaba:fastjson:1.1.55.android"
+    fastjson = "com.alibaba:fastjson:1.2.24"
+    fastjsonAndroid = "com.alibaba:fastjson:1.1.56.android"
 
     //https://github.com/google/dagger
     dagger2 = "com.google.dagger:dagger:${dagger2Version}"
@@ -66,7 +66,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.0.3"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.0.5"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
     rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
