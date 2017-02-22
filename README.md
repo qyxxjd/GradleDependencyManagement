@@ -21,7 +21,7 @@ windows下去掉前面的`./`
 ```gradle
 def supportVersion = "25.1.1"
 def rxBindingVersion = "1.0.0"
-def retrofitVersion = "2.1.0"
+def retrofitVersion = "2.2.0"
 def stethoVersion = "1.4.2"
 def butterknifeVersion = "8.5.1"
 def leakCanaryVersion = "1.5"
@@ -78,7 +78,7 @@ ext {
     //网络请求
     retrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
     gsonForRetrofit = "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
-    rxJavaForRetrofit = "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}"
+    rxJavaForRetrofit = "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
     okhttp = "com.squareup.okhttp3:okhttp:${okhttpVersion}"
     okhttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}"
 
