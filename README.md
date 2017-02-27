@@ -19,13 +19,13 @@ windows下去掉前面的`./`
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "25.1.1"
+def supportVersion = "25.2.0"
 def rxBindingVersion = "1.0.0"
 def retrofitVersion = "2.2.0"
 def stethoVersion = "1.4.2"
 def butterknifeVersion = "8.5.1"
 def leakCanaryVersion = "1.5"
-def blockCanaryVersion = "1.4.1"
+def blockCanaryVersion = "1.5.0"
 def dagger2Version = "2.9"
 def okhttpVersion = "3.6.0"
 
