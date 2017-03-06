@@ -20,7 +20,7 @@ windows下去掉前面的`./`
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
 def supportVersion = "25.2.0"
-def rxBindingVersion = "1.0.0"
+def rxBindingVersion = "2.0.0"
 def retrofitVersion = "2.2.0"
 def stethoVersion = "1.4.2"
 def butterknifeVersion = "8.5.1"
@@ -68,12 +68,12 @@ ext {
     //Rx家族，响应式编程
     rxJava = "io.reactivex.rxjava2:rxjava:2.0.6"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
-    rxBinding = "com.jakewharton.rxbinding:rxbinding:${rxBindingVersion}"
-    rxBindingSupportV4 = "com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}"
-    rxBindingSupportAppcompatV7 = "com.jakewharton.rxbinding:rxbinding-appcompat-v7:${rxBindingVersion}"
-    rxBindingSupportDesign = "com.jakewharton.rxbinding:rxbinding-design:${rxBindingVersion}"
-    rxBindingSupportRecyclerView = "com.jakewharton.rxbinding:rxbinding-recyclerview-v7:${rxBindingVersion}"
-    rxBindingLeanbackV17 = "com.jakewharton.rxbinding:rxbinding-leanback-v17:${rxBindingVersion}"
+    rxBinding = "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}"
+    rxBindingSupportV4 = "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBindingVersion}"
+    rxBindingSupportAppcompatV7 = "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:${rxBindingVersion}"
+    rxBindingSupportDesign = "com.jakewharton.rxbinding2:rxbinding-design:${rxBindingVersion}"
+    rxBindingSupportRecyclerView = "com.jakewharton.rxbinding2:rxbinding-recyclerview-v7:${rxBindingVersion}"
+    rxBindingLeanbackV17 = "com.jakewharton.rxbinding2:rxbinding-leanback-v17:${rxBindingVersion}"
 
     //网络请求
     retrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
@@ -100,7 +100,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:2.3.0'
     }
 }
 
