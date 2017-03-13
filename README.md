@@ -56,7 +56,7 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.24"
+    fastjson = "com.alibaba:fastjson:1.2.28"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.56.android"
 
     //https://github.com/google/dagger
@@ -66,7 +66,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.0.6"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.0.7"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
     rxBinding = "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBindingVersion}"

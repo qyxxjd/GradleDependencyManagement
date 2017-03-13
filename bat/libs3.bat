@@ -1,16 +1,14 @@
 c:
 
-cd "C:/Program Files (x86)/Google/Chrome/Application" 
-start chrome.exe https://github.com/vikramkakkar/SublimePicker
+cd "C:/Program Files (x86)/Google/Chrome/Application"
+start chrome.exe https://github.com/alibaba/fastjson/releases
 
-start chrome.exe https://github.com/yqritc/RecyclerView-FlexibleDivider/releases
+start chrome.exe https://github.com/google/agera/releases
 
-start chrome.exe https://github.com/saiwu-bigkoo/Android-PickerView
+start chrome.exe https://github.com/zxing/zxing/releases
 
-start chrome.exe https://github.com/DevLight-Mobile-Agency/NavigationTabBar/releases
+start chrome.exe https://github.com/greenrobot/greenDAO/releases
 
-start chrome.exe https://github.com/roughike/BottomBar
+start chrome.exe https://github.com/markzhai/AndroidPerformanceMonitor
 
-start chrome.exe https://github.com/hongyangAndroid/FlowLayout
-
-start chrome.exe https://github.com/google/flexbox-layout/releases
+start chrome.exe https://github.com/facebook/stetho/releases
