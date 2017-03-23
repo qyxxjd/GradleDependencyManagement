@@ -1,11 +1,11 @@
-def supportVersion = "25.2.0"
+def supportVersion = "25.3.0"
 def rxBindingVersion = "2.0.0"
 def retrofitVersion = "2.2.0"
 def stethoVersion = "1.4.2"
 def butterknifeVersion = "8.5.1"
 def leakCanaryVersion = "1.5"
 def blockCanaryVersion = "1.5.0"
-def dagger2Version = "2.9"
+def dagger2Version = "2.10"
 def okhttpVersion = "3.6.0"
 
 ext {
@@ -33,7 +33,7 @@ ext {
     agera = "com.google.android.agera:agera:1.3.0"
     easyPermissions = "pub.devrel:easypermissions:0.3.0"
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
-    flexboxLayout = "com.google.android:flexbox:0.2.5"
+    flexboxLayout = "com.google.android:flexbox:0.2.6"
 
     //基础项目
     baseProject = "com.classic.android:core:1.2"
@@ -46,11 +46,11 @@ ext {
 
     //图片加载
     glide = "com.github.bumptech.glide:glide:3.7.0"
-    fresco = "com.facebook.fresco:fresco:1.1.0"
+    fresco = "com.facebook.fresco:fresco:1.2.0"
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.28"
+    fastjson = "com.alibaba:fastjson:1.2.29"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.56.android"
 
     //https://github.com/google/dagger
@@ -101,13 +101,13 @@ ext {
 
     //Android流式布局，支持单选、多选等，适合用于产品标签等
     flowLayout = "com.zhy:flowlayout-lib:1.0.3"
-    bottomBar = "com.roughike:bottom-bar:2.1.1"
+    bottomBar = "com.roughike:bottom-bar:2.1.2"
     navigationTabBar = "com.github.devlight.navigationtabbar:navigationtabbar:1.2.5"
 
     //日历控件
     materialCalendarView = "com.prolificinteractive:material-calendarview:1.4.3"
     sublimePicker = "com.appeaser.sublimepickerlibrary:sublimepickerlibrary:2.1.1"
-    pickerView = "com.contrarywind:Android-PickerView:3.0.9"
+    pickerView = "com.contrarywind:Android-PickerView:3.2.1"
 
     //图表控件
     mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v3.0.1"
@@ -124,7 +124,7 @@ ext {
     //Switch开关
     switchButton = "com.kyleduo.switchbutton:library:1.4.5"
     //可高度自定义的Dialog
-    materialDialog = "com.afollestad.material-dialogs:core:0.9.4.1"
+    materialDialog = "com.afollestad.material-dialogs:core:0.9.4.2"
     xLog = "com.elvishew:xlog:1.3.0"
     avLoading = "com.wang.avi:library:2.1.3"
 }

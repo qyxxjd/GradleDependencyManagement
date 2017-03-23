@@ -19,14 +19,14 @@ windows下去掉前面的`./`
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "25.2.0"
+def supportVersion = "25.3.0"
 def rxBindingVersion = "2.0.0"
 def retrofitVersion = "2.2.0"
 def stethoVersion = "1.4.2"
 def butterknifeVersion = "8.5.1"
 def leakCanaryVersion = "1.5"
 def blockCanaryVersion = "1.5.0"
-def dagger2Version = "2.9"
+def dagger2Version = "2.10"
 def okhttpVersion = "3.6.0"
 
 ext {
@@ -52,11 +52,11 @@ ext {
 
     //图片加载
     glide = "com.github.bumptech.glide:glide:3.7.0"
-    fresco = "com.facebook.fresco:fresco:1.1.0"
+    fresco = "com.facebook.fresco:fresco:1.2.0"
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.28"
+    fastjson = "com.alibaba:fastjson:1.2.29"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.56.android"
 
     //https://github.com/google/dagger
@@ -145,7 +145,3 @@ dependencies {
     ...
 }
 ```
-
-## 参考资料
-[Gradle依赖的统一管理 stormzhang](http://mp.weixin.qq.com/s?__biz=MzA4NTQwNDcyMA==&mid=402733201&idx=1&sn=052e12818fe937e28ef08331535a179e#rd)
-
