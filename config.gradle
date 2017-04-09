@@ -1,4 +1,4 @@
-def supportVersion = "25.3.0"
+def supportVersion = "25.3.1"
 def rxBindingVersion = "2.0.0"
 def retrofitVersion = "2.2.0"
 def stethoVersion = "1.4.2"
@@ -31,7 +31,7 @@ ext {
     supportMultidex = "com.android.support:multidex:+"
     //google开源的异步框架
     agera = "com.google.android.agera:agera:1.3.0"
-    easyPermissions = "pub.devrel:easypermissions:0.3.0"
+    easyPermissions = "pub.devrel:easypermissions:0.3.1"
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
     flexboxLayout = "com.google.android:flexbox:0.2.6"
 
@@ -50,7 +50,7 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.30"
+    fastjson = "com.alibaba:fastjson:1.2.31"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.56.android"
 
     //https://github.com/google/dagger
@@ -84,7 +84,7 @@ ext {
 
     //数据库
     sqlbrite = "com.squareup.sqlbrite:sqlbrite:1.1.1"
-    greenDAO = "org.greenrobot:greendao:3.2.0"
+    greenDAO = "org.greenrobot:greendao:3.2.2"
 
     //二维码扫描
     zxing = "com.google.zxing:core:3.3.0"
@@ -101,13 +101,13 @@ ext {
 
     //Android流式布局，支持单选、多选等，适合用于产品标签等
     flowLayout = "com.zhy:flowlayout-lib:1.0.3"
-    bottomBar = "com.roughike:bottom-bar:2.2.0"
+    bottomBar = "com.roughike:bottom-bar:2.3.0"
     navigationTabBar = "com.github.devlight.navigationtabbar:navigationtabbar:1.2.5"
 
     //日历控件
     materialCalendarView = "com.prolificinteractive:material-calendarview:1.4.3"
     sublimePicker = "com.appeaser.sublimepickerlibrary:sublimepickerlibrary:2.1.1"
-    pickerView = "com.contrarywind:Android-PickerView:3.2.1"
+    pickerView = "com.contrarywind:Android-PickerView:3.2.4"
 
     //图表控件
     mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v3.0.2"
