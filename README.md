@@ -22,12 +22,12 @@ windows下去掉前面的`./`
 def supportVersion = "25.3.1"
 def rxBindingVersion = "2.0.0"
 def retrofitVersion = "2.2.0"
-def stethoVersion = "1.4.2"
+def stethoVersion = "1.5.0"
 def butterknifeVersion = "8.5.1"
 def leakCanaryVersion = "1.5"
 def blockCanaryVersion = "1.5.0"
 def dagger2Version = "2.10"
-def okhttpVersion = "3.6.0"
+def okhttpVersion = "3.7.0"
 
 ext {
 
@@ -100,7 +100,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath 'com.android.tools.build:gradle:2.3.1'
     }
 }
 

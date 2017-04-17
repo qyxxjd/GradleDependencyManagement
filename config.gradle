@@ -1,12 +1,12 @@
 def supportVersion = "25.3.1"
 def rxBindingVersion = "2.0.0"
 def retrofitVersion = "2.2.0"
-def stethoVersion = "1.4.2"
+def stethoVersion = "1.5.0"
 def butterknifeVersion = "8.5.1"
 def leakCanaryVersion = "1.5"
 def blockCanaryVersion = "1.5.0"
 def dagger2Version = "2.10"
-def okhttpVersion = "3.6.0"
+def okhttpVersion = "3.7.0"
 
 ext {
 
@@ -95,13 +95,13 @@ ext {
     //RecyclerView分割线
     recyclerViewDivider = "com.yqritc:recyclerview-flexibledivider:1.4.0"
     //通用适配器
-    commonAdapter = "com.classic.adapter:commonadapter:1.6"
+    commonAdapter = "com.classic.adapter:commonadapter:1.7"
     //方便的切换到：加载中视图、错误视图、空数据视图、网络异常视图、内容视图。
     mutipleStatusView = "com.classic.common:multiple-status-view:1.2"
 
     //Android流式布局，支持单选、多选等，适合用于产品标签等
     flowLayout = "com.zhy:flowlayout-lib:1.0.3"
-    bottomBar = "com.roughike:bottom-bar:2.3.0"
+    bottomBar = "com.roughike:bottom-bar:2.3.1"
     navigationTabBar = "com.github.devlight.navigationtabbar:navigationtabbar:1.2.5"
 
     //日历控件
@@ -124,7 +124,7 @@ ext {
     //Switch开关
     switchButton = "com.kyleduo.switchbutton:library:1.4.5"
     //可高度自定义的Dialog
-    materialDialog = "com.afollestad.material-dialogs:core:0.9.4.2"
+    materialDialog = "com.afollestad.material-dialogs:core:0.9.4.3"
     xLog = "com.elvishew:xlog:1.3.0"
     avLoading = "com.wang.avi:library:2.1.3"
 }
