@@ -51,13 +51,13 @@ ext {
     supportAnnotations = "com.android.support:support-annotations:${supportVersion}"
 
     //图片加载
-    glide = "com.github.bumptech.glide:glide:3.7.0"
+    glide = "com.github.bumptech.glide:glide:3.8.0"
     fresco = "com.facebook.fresco:fresco:1.3.0"
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
     fastjson = "com.alibaba:fastjson:1.2.31"
-    fastjsonAndroid = "com.alibaba:fastjson:1.1.56.android"
+    fastjsonAndroid = "com.alibaba:fastjson:1.1.57.android"
 
     //https://github.com/google/dagger
     dagger2 = "com.google.dagger:dagger:${dagger2Version}"
@@ -66,7 +66,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.0.9"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.1.0"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
     rxBinding = "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBindingVersion}"
