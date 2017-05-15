@@ -26,8 +26,8 @@ dependencies {
     compile rootProject.ext.supportDesign
 
 
-//    compile rootProject.ext.okhttp
-//    compile rootProject.ext.rxjava
+//    compile rootProject.ext.okHttp
+//    compile rootProject.ext.rxJava
 //    compile rootProject.ext.glide
 //    compile rootProject.ext.retrofit
 

@@ -21,13 +21,13 @@ windows下去掉前面的`./`
 ```gradle
 def supportVersion = "25.3.1"
 def rxBindingVersion = "2.0.0"
-def retrofitVersion = "2.2.0"
+def retrofitVersion = "2.3.0"
 def stethoVersion = "1.5.0"
-def butterknifeVersion = "8.5.1"
+def butterKnifeVersion = "8.5.1"
 def leakCanaryVersion = "1.5.1"
 def blockCanaryVersion = "1.5.0"
 def dagger2Version = "2.10"
-def okhttpVersion = "3.7.0"
+def okHttpVersion = "3.8.0"
 
 ext {
 
@@ -56,7 +56,7 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.31"
+    fastjson = "com.alibaba:fastjson:1.2.32"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.57.android"
 
     //https://github.com/google/dagger
@@ -138,8 +138,8 @@ dependencies {
     compile rootProject.ext.supportV4
     compile rootProject.ext.supportAppcompatV7
 
-    compile rootProject.ext.okhttp
-    compile rootProject.ext.rxjava
+    compile rootProject.ext.okHttp
+    compile rootProject.ext.rxJava
     compile rootProject.ext.glide
     compile rootProject.ext.retrofit
     ...
