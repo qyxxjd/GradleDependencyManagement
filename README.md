@@ -23,7 +23,7 @@ def supportVersion = "25.3.1"
 def rxBindingVersion = "2.0.0"
 def retrofitVersion = "2.3.0"
 def stethoVersion = "1.5.0"
-def butterKnifeVersion = "8.5.1"
+def butterKnifeVersion = "8.6.0"
 def leakCanaryVersion = "1.5.1"
 def blockCanaryVersion = "1.5.0"
 def dagger2Version = "2.10"
@@ -100,7 +100,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.1'
+        classpath 'com.android.tools.build:gradle:2.3.2'
     }
 }
 
