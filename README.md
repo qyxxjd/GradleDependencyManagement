@@ -27,7 +27,7 @@ def butterKnifeVersion = "8.6.0"
 def leakCanaryVersion = "1.5.1"
 def blockCanaryVersion = "1.5.0"
 def dagger2Version = "2.11"
-def okHttpVersion = "3.8.0"
+def okHttpVersion = "3.8.1"
 
 ext {
 
@@ -56,7 +56,7 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.32"
+    fastjson = "com.alibaba:fastjson:1.2.33"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.58.android"
 
     //https://github.com/google/dagger
@@ -66,7 +66,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.1.0"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.1.1"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
     rxBinding = "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBindingVersion}"
@@ -100,7 +100,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.2'
+        classpath 'com.android.tools.build:gradle:2.3.3'
     }
 }
 
