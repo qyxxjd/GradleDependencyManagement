@@ -33,7 +33,7 @@ ext {
     agera = "com.google.android.agera:agera:1.3.0"
     easyPermissions = "pub.devrel:easypermissions:0.4.2"
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
-    flexboxLayout = "com.google.android:flexbox:0.2.7"
+    flexboxLayout = "com.google.android:flexbox:0.3.0"
 
     //基础项目
     baseProject = "com.classic.android:core:1.4"
@@ -50,8 +50,8 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.33"
-    fastjsonAndroid = "com.alibaba:fastjson:1.1.58.android"
+    fastjson = "com.alibaba:fastjson:1.2.34"
+    fastjsonAndroid = "com.alibaba:fastjson:1.1.59.android"
 
     //https://github.com/google/dagger
     dagger2 = "com.google.dagger:dagger:${dagger2Version}"
@@ -125,7 +125,7 @@ ext {
     //Switch开关
     switchButton = "com.kyleduo.switchbutton:library:1.4.6"
     //可高度自定义的Dialog
-    materialDialog = "com.afollestad.material-dialogs:core:0.9.4.3"
+    materialDialog = "com.afollestad.material-dialogs:core:0.9.4.5"
     xLog = "com.elvishew:xlog:1.3.0"
     avLoading = "com.wang.avi:library:2.1.3"
 }
