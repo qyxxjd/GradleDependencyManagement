@@ -7,7 +7,7 @@ def leakCanaryVersion = "1.5.1"
 def blockCanaryVersion = "1.5.0"
 def dagger2Version = "2.11"
 def okHttpVersion = "3.8.1"
-def glideVersion = "4.0.0-RC1"
+def glideVersion = "4.0.0"
 
 ext {
 
@@ -32,7 +32,7 @@ ext {
     supportMultidex = "com.android.support:multidex:+"
     //google开源的异步框架
     agera = "com.google.android.agera:agera:1.3.0"
-    easyPermissions = "pub.devrel:easypermissions:0.4.2"
+    easyPermissions = "pub.devrel:easypermissions:0.4.3"
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
     flexboxLayout = "com.google.android:flexbox:0.3.0"
 
