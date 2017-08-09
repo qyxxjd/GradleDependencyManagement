@@ -2,7 +2,7 @@ def supportVersion = "25.3.1"
 def rxBindingVersion = "2.0.0"
 def retrofitVersion = "2.3.0"
 def stethoVersion = "1.5.0"
-def butterKnifeVersion = "8.7.0"
+def butterKnifeVersion = "8.8.0"
 def leakCanaryVersion = "1.5.1"
 def blockCanaryVersion = "1.5.0"
 def dagger2Version = "2.11"
@@ -52,8 +52,8 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.35"
-    fastjsonAndroid = "com.alibaba:fastjson:1.1.60.android"
+    fastjson = "com.alibaba:fastjson:1.2.36"
+    fastjsonAndroid = "com.alibaba:fastjson:1.1.61.android"
 
     //https://github.com/google/dagger
     dagger2 = "com.google.dagger:dagger:${dagger2Version}"
