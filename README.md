@@ -23,12 +23,12 @@ def supportVersion = "25.3.1"
 def rxBindingVersion = "2.0.0"
 def retrofitVersion = "2.3.0"
 def stethoVersion = "1.5.0"
-def butterKnifeVersion = "8.7.0"
-def leakCanaryVersion = "1.5.1"
+def butterKnifeVersion = "8.8.1"
+def leakCanaryVersion = "1.5.2"
 def blockCanaryVersion = "1.5.0"
 def dagger2Version = "2.11"
 def okHttpVersion = "3.8.1"
-def glideVersion = "4.0.0-RC1"
+def glideVersion = "4.0.0"
 
 ext {
 
@@ -54,12 +54,12 @@ ext {
     //图片加载
     glide = "com.github.bumptech.glide:glide:${glideVersion}"
     glideCompiler = "com.github.bumptech.glide:compiler:${glideVersion}"
-    fresco = "com.facebook.fresco:fresco:1.4.0"
+    fresco = "com.facebook.fresco:fresco:1.5.0"
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.35"
-    fastjsonAndroid = "com.alibaba:fastjson:1.1.60.android"
+    fastjson = "com.alibaba:fastjson:1.2.36"
+    fastjsonAndroid = "com.alibaba:fastjson:1.1.61.android"
 
     //https://github.com/google/dagger
     dagger2 = "com.google.dagger:dagger:${dagger2Version}"
@@ -68,7 +68,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.1.2"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.1.3"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
     rxBinding = "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBindingVersion}"
