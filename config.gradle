@@ -52,8 +52,8 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.36"
-    fastjsonAndroid = "com.alibaba:fastjson:1.1.61.android"
+    fastjson = "com.alibaba:fastjson:1.2.37"
+    fastjsonAndroid = "com.alibaba:fastjson:1.1.62.android"
 
     //https://github.com/google/dagger
     dagger2 = "com.google.dagger:dagger:${dagger2Version}"
@@ -109,7 +109,7 @@ ext {
     //日历控件
     materialCalendarView = "com.prolificinteractive:material-calendarview:1.4.3"
     sublimePicker = "com.appeaser.sublimepickerlibrary:sublimepickerlibrary:2.1.1"
-    pickerView = "com.contrarywind:Android-PickerView:3.2.5"
+    pickerView = "com.contrarywind:Android-PickerView:3.2.6"
 
     //图表控件
     mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v3.0.2"
@@ -126,7 +126,7 @@ ext {
     //Switch开关
     switchButton = "com.kyleduo.switchbutton:library:1.4.6"
     //可高度自定义的Dialog
-    materialDialog = "com.afollestad.material-dialogs:core:0.9.4.6"
+    materialDialog = "com.afollestad.material-dialogs:core:0.9.4.7"
     xLog = "com.elvishew:xlog:1.3.0"
     avLoading = "com.wang.avi:library:2.1.3"
 }
