@@ -19,22 +19,22 @@ windows下去掉前面的`./`
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "25.3.1"
+def supportVersion = "26.1.0"
 def rxBindingVersion = "2.0.0"
 def retrofitVersion = "2.3.0"
 def stethoVersion = "1.5.0"
 def butterKnifeVersion = "8.8.1"
-def leakCanaryVersion = "1.5.2"
+def leakCanaryVersion = "1.5.4"
 def blockCanaryVersion = "1.5.0"
-def dagger2Version = "2.11"
-def okHttpVersion = "3.8.1"
-def glideVersion = "4.0.0"
+def dagger2Version = "2.12"
+def okHttpVersion = "3.9.0"
+def glideVersion = "4.3.0"
 
 ext {
 
     android = [
-            compileSdkVersion: 25,
-            buildToolsVersion: "25.0.3",
+            compileSdkVersion: 27,
+            buildToolsVersion: "27.0.0",
             applicationId    : "your package name",
             minSdkVersion    : 14,
             targetSdkVersion : 25,
@@ -58,8 +58,8 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.36"
-    fastjsonAndroid = "com.alibaba:fastjson:1.1.61.android"
+    fastjson = "com.alibaba:fastjson:1.2.40"
+    fastjsonAndroid = "com.alibaba:fastjson:1.1.65.android"
 
     //https://github.com/google/dagger
     dagger2 = "com.google.dagger:dagger:${dagger2Version}"
@@ -68,7 +68,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.1.3"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.1.6"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
     rxBinding = "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBindingVersion}"
@@ -99,15 +99,17 @@ apply from: "config.gradle"
 
 buildscript {
     repositories {
+        google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.0.0'
     }
 }
 
 allprojects {
     repositories {
+        google()
         jcenter()
     }
 }
