@@ -19,25 +19,25 @@ windows下去掉前面的`./`
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "26.1.0"
+def supportVersion = "27.0.0"
 def rxBindingVersion = "2.0.0"
 def retrofitVersion = "2.3.0"
 def stethoVersion = "1.5.0"
 def butterKnifeVersion = "8.8.1"
 def leakCanaryVersion = "1.5.4"
 def blockCanaryVersion = "1.5.0"
-def dagger2Version = "2.12"
-def okHttpVersion = "3.9.0"
-def glideVersion = "4.3.0"
+def dagger2Version = "2.13"
+def okHttpVersion = "3.9.1"
+def glideVersion = "4.3.1"
 
 ext {
 
     android = [
             compileSdkVersion: 27,
-            buildToolsVersion: "27.0.0",
+            buildToolsVersion: "27.0.1",
             applicationId    : "your package name",
             minSdkVersion    : 14,
-            targetSdkVersion : 25,
+            targetSdkVersion : 27,
             versionCode      : 1,
             versionName      : "1.0"
     ]
@@ -55,7 +55,6 @@ ext {
     glide = "com.github.bumptech.glide:glide:${glideVersion}"
     glideCompiler = "com.github.bumptech.glide:compiler:${glideVersion}"
     fresco = "com.facebook.fresco:fresco:1.5.0"
-    picasso = "com.squareup.picasso:picasso:2.5.2"
 
     //json解析
     fastjson = "com.alibaba:fastjson:1.2.40"
