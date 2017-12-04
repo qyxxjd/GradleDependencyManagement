@@ -19,7 +19,7 @@ windows下去掉前面的`./`
 
 项目根目录新建config.gradle文件，配置参考如下：
 ```gradle
-def supportVersion = "27.0.0"
+def supportVersion = "27.0.1"
 def rxBindingVersion = "2.0.0"
 def retrofitVersion = "2.3.0"
 def stethoVersion = "1.5.0"
@@ -57,8 +57,8 @@ ext {
     fresco = "com.facebook.fresco:fresco:1.5.0"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.40"
-    fastjsonAndroid = "com.alibaba:fastjson:1.1.65.android"
+    fastjson = "com.alibaba:fastjson:1.2.41"
+    fastjsonAndroid = "com.alibaba:fastjson:1.1.67.android"
 
     //https://github.com/google/dagger
     dagger2 = "com.google.dagger:dagger:${dagger2Version}"
@@ -67,7 +67,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.1.6"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.1.7"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
     rxBinding = "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBindingVersion}"
@@ -102,7 +102,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:3.0.1'
     }
 }
 
