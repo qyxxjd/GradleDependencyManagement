@@ -1,4 +1,4 @@
-def supportVersion = "27.0.0"
+def supportVersion = "27.0.1"
 def rxBindingVersion = "2.0.0"
 def retrofitVersion = "2.3.0"
 def stethoVersion = "1.5.0"
@@ -37,10 +37,10 @@ ext {
     flexboxLayout = "com.google.android:flexbox:0.3.1"
 
     //基础项目
-    baseProject = "com.classic.android:core:1.4"
-    rxProject = "com.classic.android:rxjava:1.9"
-    httpProject = "com.classic.android:okhttp:1.9"
-    utils = "com.classic.android:utils:1.0"
+    baseProject = "com.classic.android:core:1.5"
+    rxProject = "com.classic.android:rxjava:2.0"
+    httpProject = "com.classic.android:okhttp:2.0"
+    utils = "com.classic.android:utils:1.1"
 
     //动画
     nineoldandroids = "com.nineoldandroids:library:2.4.0"
@@ -51,8 +51,8 @@ ext {
     fresco = "com.facebook.fresco:fresco:1.5.0"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.40"
-    fastjsonAndroid = "com.alibaba:fastjson:1.1.65.android"
+    fastjson = "com.alibaba:fastjson:1.2.41"
+    fastjsonAndroid = "com.alibaba:fastjson:1.1.67.android"
 
     //https://github.com/google/dagger
     dagger2 = "com.google.dagger:dagger:${dagger2Version}"
@@ -61,7 +61,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterKnifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.1.6"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.1.7"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
     rxBinding = "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBindingVersion}"
@@ -85,7 +85,7 @@ ext {
     stethoJsRhino = "com.facebook.stetho:stetho-js-rhino:${stethoVersion}"
 
     //数据库
-    sqlbrite = "com.squareup.sqlbrite2:sqlbrite:2.0.0"
+    sqlbrite = "com.squareup.sqlbrite3:sqlbrite:3.0.0"
     greenDAO = "org.greenrobot:greendao:3.2.2"
 
     //二维码扫描
@@ -99,11 +99,10 @@ ext {
     //通用适配器
     commonAdapter = "com.classic.adapter:commonadapter:1.9"
     //方便的切换到：加载中视图、错误视图、空数据视图、网络异常视图、内容视图。
-    mutipleStatusView = "com.classic.common:multiple-status-view:1.3"
+    mutipleStatusView = "com.classic.common:multiple-status-view:1.4"
 
     //Android流式布局，支持单选、多选等，适合用于产品标签等
     flowLayout = "com.zhy:flowlayout-lib:1.1.2"
-    bottomBar = "com.roughike:bottom-bar:2.3.1"
 
     //日历控件
     materialCalendarView = "com.prolificinteractive:material-calendarview:1.4.3"
@@ -125,7 +124,7 @@ ext {
     //Switch开关
     switchButton = "com.kyleduo.switchbutton:library:2.0.0"
     //可高度自定义的Dialog
-    materialDialog = "com.afollestad.material-dialogs:core:0.9.5.0"
+    materialDialog = "com.afollestad.material-dialogs:core:0.9.6.0"
     xLog = "com.elvishew:xlog:1.3.0"
     avLoading = "com.wang.avi:library:2.1.3"
 }
