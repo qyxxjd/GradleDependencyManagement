@@ -1,4 +1,4 @@
-def supportVersion = "27.0.1"
+def supportVersion = "27.0.2"
 def rxBindingVersion = "2.0.0"
 def retrofitVersion = "2.3.0"
 def stethoVersion = "1.5.0"
@@ -7,13 +7,13 @@ def leakCanaryVersion = "1.5.4"
 def blockCanaryVersion = "1.5.0"
 def dagger2Version = "2.13"
 def okHttpVersion = "3.9.1"
-def glideVersion = "4.3.1"
+def glideVersion = "4.4.0"
 
 ext {
 
     android = [
             compileSdkVersion: 27,
-            buildToolsVersion: "27.0.1",
+            buildToolsVersion: "27.0.2",
             applicationId    : "com.classic.android",
             minSdkVersion    : 14,
             targetSdkVersion : 27,
@@ -32,7 +32,7 @@ ext {
     supportMultidex = "com.android.support:multidex:+"
     //google开源的异步框架
     agera = "com.google.android.agera:agera:1.3.0"
-    easyPermissions = "pub.devrel:easypermissions:1.0.1"
+    easyPermissions = "pub.devrel:easypermissions:1.1.1"
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
     flexboxLayout = "com.google.android:flexbox:0.3.1"
 
@@ -48,10 +48,10 @@ ext {
     //图片加载
     glide = "com.github.bumptech.glide:glide:${glideVersion}"
     glideCompiler = "com.github.bumptech.glide:compiler:${glideVersion}"
-    fresco = "com.facebook.fresco:fresco:1.5.0"
+    fresco = "com.facebook.fresco:fresco:1.7.0"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.41"
+    fastjson = "com.alibaba:fastjson:1.2.43"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.67.android"
 
     //https://github.com/google/dagger
@@ -105,12 +105,10 @@ ext {
     flowLayout = "com.zhy:flowlayout-lib:1.1.2"
 
     //日历控件
-    materialCalendarView = "com.prolificinteractive:material-calendarview:1.4.3"
-    sublimePicker = "com.appeaser.sublimepickerlibrary:sublimepickerlibrary:2.1.1"
-    pickerView = "com.contrarywind:Android-PickerView:3.2.6"
+    pickerView = "com.contrarywind:Android-PickerView:3.2.7"
 
     //图表控件
-    mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v3.0.2"
+    mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v3.0.3"
     helloCharts = "com.github.lecho:hellocharts-library:1.5.8@aar"
     williamChart = "com.diogobernardino:williamchart:2.5.0"
 
