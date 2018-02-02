@@ -1,5 +1,5 @@
 def supportVersion = "27.0.2"
-def rxBindingVersion = "2.0.0"
+def rxBindingVersion = "2.1.0"
 def retrofitVersion = "2.3.0"
 def stethoVersion = "1.5.0"
 def butterKnifeVersion = "8.8.1"
@@ -32,7 +32,7 @@ ext {
     supportMultidex = "com.android.support:multidex:+"
     //google开源的异步框架
     agera = "com.google.android.agera:agera:1.3.0"
-    easyPermissions = "pub.devrel:easypermissions:1.1.1"
+    easyPermissions = "pub.devrel:easypermissions:1.1.3"
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
     flexboxLayout = "com.google.android:flexbox:0.3.2"
 
@@ -48,10 +48,10 @@ ext {
     //图片加载
     glide = "com.github.bumptech.glide:glide:${glideVersion}"
     glideCompiler = "com.github.bumptech.glide:compiler:${glideVersion}"
-    fresco = "com.facebook.fresco:fresco:1.7.1"
+    fresco = "com.facebook.fresco:fresco:1.8.0"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.44"
+    fastjson = "com.alibaba:fastjson:1.2.45"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.68.android"
 
     //https://github.com/google/dagger
@@ -61,7 +61,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterKnifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.1.8"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.1.9"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
     rxBinding = "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBindingVersion}"
