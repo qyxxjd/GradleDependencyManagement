@@ -1,4 +1,4 @@
-def supportVersion = "27.0.2"
+def supportVersion = "27.1.0"
 def rxBindingVersion = "2.1.1"
 def retrofitVersion = "2.3.0"
 def stethoVersion = "1.5.0"
@@ -31,7 +31,7 @@ ext {
     supportAnnotations = "com.android.support:support-annotations:${supportVersion}"
     supportMultidex = "com.android.support:multidex:+"
     //google开源的异步框架
-    agera = "com.google.android.agera:agera:1.3.0"
+    agera = "com.google.android.agera:agera:1.4.0"
     easyPermissions = "pub.devrel:easypermissions:1.1.3"
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
     flexboxLayout = "com.google.android:flexbox:0.3.2"
@@ -76,7 +76,7 @@ ext {
     rxJavaForRetrofit = "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
     okhttp = "com.squareup.okhttp3:okhttp:${okHttpVersion}"
     okhttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}"
-    okio = "com.squareup.okio:okio:1.13.0"
+    okio = "com.squareup.okio:okio:1.14.0"
 
     //facebook出品的网络调试神器
     stetho = "com.facebook.stetho:stetho:${stethoVersion}"
@@ -85,7 +85,7 @@ ext {
     stethoJsRhino = "com.facebook.stetho:stetho-js-rhino:${stethoVersion}"
 
     //数据库
-    sqlbrite = "com.squareup.sqlbrite3:sqlbrite:3.1.1"
+    sqlbrite = "com.squareup.sqlbrite3:sqlbrite:3.2.0"
     greenDAO = "org.greenrobot:greendao:3.2.2"
 
     //二维码扫描
