@@ -5,7 +5,7 @@ def stethoVersion = "1.5.0"
 def butterKnifeVersion = "8.8.1"
 def leakCanaryVersion = "1.5.4"
 def blockCanaryVersion = "1.5.0"
-def dagger2Version = "2.14.1"
+def dagger2Version = "2.15"
 def okHttpVersion = "3.10.0"
 def glideVersion = "4.6.1"
 
@@ -32,7 +32,7 @@ ext {
     supportMultidex = "com.android.support:multidex:+"
     //google开源的异步框架
     agera = "com.google.android.agera:agera:1.4.0"
-    easyPermissions = "pub.devrel:easypermissions:1.1.3"
+    easyPermissions = "pub.devrel:easypermissions:1.2.0"
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
     flexboxLayout = "com.google.android:flexbox:0.3.2"
 
@@ -51,7 +51,7 @@ ext {
     fresco = "com.facebook.fresco:fresco:1.8.1"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.46"
+    fastjson = "com.alibaba:fastjson:1.2.47"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.68.android"
 
     //https://github.com/google/dagger
