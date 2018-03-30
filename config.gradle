@@ -1,6 +1,6 @@
 def supportVersion = "27.1.0"
 def rxBindingVersion = "2.1.1"
-def retrofitVersion = "2.3.0"
+def retrofitVersion = "2.4.0"
 def stethoVersion = "1.5.0"
 def butterKnifeVersion = "8.8.1"
 def leakCanaryVersion = "1.5.4"
@@ -61,7 +61,7 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterKnifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.1.10"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.1.12"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.2"
     rxBinding = "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBindingVersion}"
@@ -103,7 +103,7 @@ ext {
     flowLayout = "com.zhy:flowlayout-lib:1.1.2"
 
     //日历控件
-    pickerView = "com.contrarywind:Android-PickerView:3.2.7"
+    pickerView = "com.contrarywind:Android-PickerView:4.1.0"
 
     //图表控件
     mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v3.0.3"
