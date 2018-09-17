@@ -5,9 +5,9 @@ def stethoVersion = "1.5.0"
 def butterKnifeVersion = "8.8.1"
 def leakCanaryVersion = "1.6.1"
 def blockCanaryVersion = "1.5.0"
-def dagger2Version = "2.16"
+def dagger2Version = "2.17"
 def okHttpVersion = "3.11.0"
-def glideVersion = "4.7.1"
+def glideVersion = "4.8.0"
 
 ext {
 
@@ -32,7 +32,7 @@ ext {
     supportMultidex = "com.android.support:multidex:+"
     //google开源的异步框架
     agera = "com.google.android.agera:agera:1.4.0"
-    easyPermissions = "pub.devrel:easypermissions:1.2.0"
+    easyPermissions = "pub.devrel:easypermissions:1.3.0"
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
     flexboxLayout = "com.google.android:flexbox:1.0.0"
 
@@ -52,7 +52,7 @@ ext {
     picasso = "com.squareup.picasso:picasso:2.71828"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.47"
+    fastjson = "com.alibaba:fastjson:1.2.49"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.68.android"
 
     //https://github.com/google/dagger
@@ -62,8 +62,8 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterKnifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.2.0"
-    rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.2"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.2.2"
+    rxAndroid = "io.reactivex.rxjava2:rxandroid:2.1.0"
     rxBinding = "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBindingVersion}"
     rxBindingSupportAppcompatV7 = "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:${rxBindingVersion}"
@@ -77,7 +77,7 @@ ext {
     rxJavaForRetrofit = "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
     okhttp = "com.squareup.okhttp3:okhttp:${okHttpVersion}"
     okhttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}"
-    okio = "com.squareup.okio:okio:1.15.0"
+    okio = "com.squareup.okio:okio:2.0.0"
 
     //facebook出品的网络调试神器
     stetho = "com.facebook.stetho:stetho:${stethoVersion}"
