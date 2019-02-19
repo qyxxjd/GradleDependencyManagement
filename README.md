@@ -23,12 +23,12 @@ def supportVersion = "28.0.0"
 def rxBindingVersion = "2.2.0"
 def retrofitVersion = "2.5.0"
 def stethoVersion = "1.5.0"
-def butterKnifeVersion = "9.0.0-rc2"
-def leakCanaryVersion = "1.6.2"
+def butterKnifeVersion = "10.1.0"
+def leakCanaryVersion = "1.6.3"
 def blockCanaryVersion = "1.5.0"
-def dagger2Version = "2.19"
-def okHttpVersion = "3.12.0"
-def glideVersion = "4.8.0"
+def dagger2Version = "2.21"
+def okHttpVersion = "3.13.1"
+def glideVersion = "4.9.0"
 
 ext {
 
@@ -54,7 +54,7 @@ ext {
     //图片加载
     glide = "com.github.bumptech.glide:glide:${glideVersion}"
     glideCompiler = "com.github.bumptech.glide:compiler:${glideVersion}"
-    fresco = "com.facebook.fresco:fresco:1.11.0"
+    fresco = "com.facebook.fresco:fresco:1.12.1"
 
     //https://github.com/google/dagger
     dagger2 = "com.google.dagger:dagger:${dagger2Version}"
@@ -98,7 +98,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.3.1'
     }
 }
 
