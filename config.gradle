@@ -2,12 +2,12 @@ def supportVersion = "28.0.0"
 def rxBindingVersion = "2.2.0"
 def retrofitVersion = "2.5.0"
 def stethoVersion = "1.5.0"
-def butterKnifeVersion = "9.0.0-rc2"
-def leakCanaryVersion = "1.6.2"
+def butterKnifeVersion = "10.1.0"
+def leakCanaryVersion = "1.6.3"
 def blockCanaryVersion = "1.5.0"
-def dagger2Version = "2.19"
-def okHttpVersion = "3.12.0"
-def glideVersion = "4.8.0"
+def dagger2Version = "2.21"
+def okHttpVersion = "3.13.1"
+def glideVersion = "4.9.0"
 
 ext {
 
@@ -32,7 +32,7 @@ ext {
     supportMultidex = "com.android.support:multidex:+"
     //google开源的异步框架
     agera = "com.google.android.agera:agera:1.4.0"
-    easyPermissions = "pub.devrel:easypermissions:2.0.0"
+    easyPermissions = "pub.devrel:easypermissions:3.0.0"
     //google开源的一款新布局,综合了LinearLayout 和 RelativeLayout特性,及功能扩展
     flexboxLayout = "com.google.android:flexbox:1.1.0"
 
@@ -45,11 +45,11 @@ ext {
     //图片加载
     glide = "com.github.bumptech.glide:glide:${glideVersion}"
     glideCompiler = "com.github.bumptech.glide:compiler:${glideVersion}"
-    fresco = "com.facebook.fresco:fresco:1.11.0"
+    fresco = "com.facebook.fresco:fresco:1.12.1"
     picasso = "com.squareup.picasso:picasso:2.71828"
 
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.54"
+    fastjson = "com.alibaba:fastjson:1.2.56"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.68.android"
 
     //https://github.com/google/dagger
@@ -59,8 +59,8 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterKnifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.2.4"
-    rxAndroid = "io.reactivex.rxjava2:rxandroid:2.1.0"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.2.6"
+    rxAndroid = "io.reactivex.rxjava2:rxandroid:2.1.1"
     rxBinding = "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBindingVersion}"
     rxBindingSupportAppcompatV7 = "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:${rxBindingVersion}"
@@ -74,7 +74,7 @@ ext {
     rxJavaForRetrofit = "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
     okhttp = "com.squareup.okhttp3:okhttp:${okHttpVersion}"
     okhttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}"
-    okio = "com.squareup.okio:okio:2.1.0"
+    okio = "com.squareup.okio:okio:2.2.2"
 
     //facebook出品的网络调试神器
     stetho = "com.facebook.stetho:stetho:${stethoVersion}"
@@ -89,7 +89,7 @@ ext {
     zxing = "com.google.zxing:core:3.3.3"
 
     //圆形ImageView
-    circleImageView = "de.hdodenhof:circleimageview:2.2.0"
+    circleImageView = "de.hdodenhof:circleimageview:3.0.0"
 
     //通用适配器
     commonAdapter = "com.classic.adapter:commonadapter:2.0"
@@ -100,7 +100,7 @@ ext {
     flowLayout = "com.zhy:flowlayout-lib:1.1.2"
 
     //日历控件
-    pickerView = "com.contrarywind:Android-PickerView:4.1.6"
+    pickerView = "com.contrarywind:Android-PickerView:4.1.7"
 
     //图表控件
     mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v3.0.3"
@@ -117,9 +117,9 @@ ext {
     //Switch开关
     switchButton = "com.kyleduo.switchbutton:library:2.0.0"
     //可高度自定义的Dialog
-    materialDialog = "com.afollestad.material-dialogs:core:0.9.6.0"
+    materialDialog = "com.afollestad.material-dialogs:core:2.0.0"
     xLog = "com.elvishew:xlog:1.6.1"
     avLoading = "com.wang.avi:library:2.1.3"
     
-    dbDebug = "com.amitshekhar.android:debug-db:1.0.4"
+    dbDebug = "com.amitshekhar.android:debug-db:1.0.5"
 }
