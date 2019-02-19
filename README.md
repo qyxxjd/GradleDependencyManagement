@@ -133,14 +133,14 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile rootProject.ext.supportV4
-    compile rootProject.ext.supportAppcompatV7
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation rootProject.ext.supportV4
+    implementation rootProject.ext.supportAppcompatV7
 
-    compile rootProject.ext.okHttp
-    compile rootProject.ext.rxJava
-    compile rootProject.ext.glide
-    compile rootProject.ext.retrofit
+    implementation rootProject.ext.okHttp
+    implementation rootProject.ext.rxJava
+    implementation rootProject.ext.glide
+    implementation rootProject.ext.retrofit
     ...
 }
 ```
