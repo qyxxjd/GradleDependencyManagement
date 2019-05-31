@@ -26,8 +26,8 @@ def stethoVersion = "1.5.0"
 def butterKnifeVersion = "10.1.0"
 def leakCanaryVersion = "1.6.3"
 def blockCanaryVersion = "1.5.0"
-def dagger2Version = "2.21"
-def okHttpVersion = "3.13.1"
+def dagger2Version = "2.23.1"
+def okHttpVersion = "3.14.2"
 def glideVersion = "4.9.0"
 
 ext {
@@ -54,7 +54,6 @@ ext {
     //图片加载
     glide = "com.github.bumptech.glide:glide:${glideVersion}"
     glideCompiler = "com.github.bumptech.glide:compiler:${glideVersion}"
-    fresco = "com.facebook.fresco:fresco:1.12.1"
 
     //https://github.com/google/dagger
     dagger2 = "com.google.dagger:dagger:${dagger2Version}"
@@ -63,8 +62,8 @@ ext {
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.2.4"
-    rxAndroid = "io.reactivex.rxjava2:rxandroid:2.1.0"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.2.9"
+    rxAndroid = "io.reactivex.rxjava2:rxandroid:2.1.1"
     rxBinding = "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBindingVersion}"
     rxBindingSupportAppcompatV7 = "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:${rxBindingVersion}"
@@ -98,7 +97,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.1'
+        classpath 'com.android.tools.build:gradle:3.4.1'
     }
 }
 
