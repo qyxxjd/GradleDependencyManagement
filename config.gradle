@@ -54,6 +54,7 @@ ext {
     //json解析
     fastjson = "com.alibaba:fastjson:1.2.58"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.71.android"
+    gson = "com.google.code.gson:gson:2.8.5"
 
     //https://github.com/google/dagger
     dagger2 = "com.google.dagger:dagger:${dagger2Version}"
