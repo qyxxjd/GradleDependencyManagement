@@ -1,11 +1,11 @@
 def supportVersion = "28.0.0"
-def rxBindingVersion = "2.2.0"
-def retrofitVersion = "2.6.0"
+def rxBindingVersion = "3.0.0"
+def retrofitVersion = "2.6.1"
 def stethoVersion = "1.5.1"
 def leakCanaryVersion = "1.6.3"
 def blockCanaryVersion = "1.5.0"
-def dagger2Version = "2.23.2"
-def okHttpVersion = "4.0.1"
+def dagger2Version = "2.24"
+def okHttpVersion = "4.1.0"
 def glideVersion = "4.9.0"
 
 ext {
@@ -51,7 +51,7 @@ ext {
     circleImageView = "de.hdodenhof:circleimageview:3.0.0"
     
     //json解析
-    fastjson = "com.alibaba:fastjson:1.2.58"
+    fastjson = "com.alibaba:fastjson:1.2.59"
     fastjsonAndroid = "com.alibaba:fastjson:1.1.71.android"
     gson = "com.google.code.gson:gson:2.8.5"
 
@@ -60,7 +60,7 @@ ext {
     dagger2Compiler = "com.google.dagger:dagger-compiler:${dagger2Version}"
 
     //Rx家族，响应式编程
-    rxJava = "io.reactivex.rxjava2:rxjava:2.2.10"
+    rxJava = "io.reactivex.rxjava2:rxjava:2.2.11"
     rxAndroid = "io.reactivex.rxjava2:rxandroid:2.1.1"
     rxBinding = "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}"
     rxBindingSupportV4 = "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxBindingVersion}"
@@ -75,7 +75,7 @@ ext {
     rxJavaForRetrofit = "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
     okhttp = "com.squareup.okhttp3:okhttp:${okHttpVersion}"
     okhttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}"
-    okio = "com.squareup.okio:okio:2.2.2"
+    okio = "com.squareup.okio:okio:2.3.0"
 
     //facebook出品的网络调试神器
     stetho = "com.facebook.stetho:stetho:${stethoVersion}"
