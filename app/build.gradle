@@ -1,15 +1,19 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: "org.jlleitschuh.gradle.ktlint"
 
 android {
-    compileSdkVersion rootProject.ext.android.compileSdkVersion
-    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    compileSdkVersion compile_sdk_version
+    buildToolsVersion build_tools_version
 
     defaultConfig {
-        applicationId rootProject.ext.android.applicationId
-        minSdkVersion rootProject.ext.android.minSdkVersion
-        targetSdkVersion rootProject.ext.android.targetSdkVersion
-        versionCode rootProject.ext.android.versionCode
-        versionName rootProject.ext.android.versionName
+        applicationId "com.classic.android"
+        minSdkVersion min_sdk_version
+        targetSdkVersion target_sdk_version
+        versionCode 1
+        versionName "1.0"
     }
     buildTypes {
         release {
@@ -17,18 +21,73 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    // ndk {
+    //     //设置支持的SO库架构
+    //     abiFilters 'armeabi'
+    // }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile rootProject.ext.supportV4
-    compile rootProject.ext.supportAppcompatV7
-    compile rootProject.ext.supportDesign
+    // Kotlin and Coroutines
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutines_version"
+    // AndroidX
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+    implementation "androidx.vectordrawable:vectordrawable:$vector_drawable_version"
+    implementation "androidx.recyclerview:recyclerview:$recycler_view_version"
+    implementation "androidx.cardview:cardview:$card_view_version"
+    implementation 'androidx.multidex:multidex:2.0.1'
+    // ktx
+    implementation "androidx.core:core-ktx:$core_ktx_version"
+    implementation "androidx.sqlite:sqlite-ktx:$sqlite_ktx_version"
+    implementation "androidx.fragment:fragment-ktx:$fragment_ktx_version"
+    implementation "androidx.collection:collection-ktx:$collection_ktx_version"
+    implementation "androidx.navigation:navigation-runtime-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
+    // Architecture components
+    implementation "androidx.legacy:legacy-support-v4:$legacy_support_v4_version"
+    implementation "androidx.paging:paging-common:$paging_version"
+    implementation "androidx.paging:paging-runtime:$paging_version"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
 
+    // Google
+    implementation "com.google.android.material:material:$google_material_version"
+    implementation "com.google.code.gson:gson:2.8.6"
+    implementation "pub.devrel:easypermissions:3.0.0"
+    implementation "com.google.android:flexbox:2.0.0"
+    implementation "com.google.android.agera:agera:1.4.0"
+    // https://github.com/google/dagger
+    implementation "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
 
-//    compile rootProject.ext.okHttp
-//    compile rootProject.ext.rxJava
-//    compile rootProject.ext.glide
-//    compile rootProject.ext.retrofit
+    // Network
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+    implementation "com.squareup.okio:okio:2.4.3"
 
+    // Image
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+    implementation "io.coil-kt:coil:0.9.1"
+    implementation "de.hdodenhof:circleimageview:3.0.1"
+    
+    // Analytics
+    implementation "com.flurry.android:analytics:12.1.0@aar"
+
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:2.1"
 }

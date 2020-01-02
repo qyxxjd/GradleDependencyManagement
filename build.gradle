@@ -1,17 +1,25 @@
 apply from: "config.gradle"
 
 buildscript {
+    apply from: 'tools/config.gradle'
     repositories {
+        google()
         jcenter()
+        maven { url "https://plugins.gradle.org/m2/" } // ktlint
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // https://github.com/JLLeitschuh/ktlint-gradle/releases
+        classpath "org.jlleitschuh.gradle:ktlint-gradle:$ktlint_version"
     }
 }
 
 allprojects {
     repositories {
+        google()
         jcenter()
+        maven { url 'https://jitpack.io' }
     }
 }
 
